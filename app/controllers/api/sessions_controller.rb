@@ -2,9 +2,9 @@ class Api::SessionsController < ApplicationController
 
   def create
     @user = User.find_by_credentials(
-      username: params[:user][:username],
-      email: params[:user][:email],
-      password: params[:user][:password]
+      params[:user][:username],
+      params[:user][:email],
+      params[:user][:password]
       )
     if @user
       login(@user)
@@ -20,5 +20,6 @@ class Api::SessionsController < ApplicationController
       else
         render json: ['Already Logged Out'], status: 404
       end
+    end
   end
 end
