@@ -1,5 +1,42 @@
 {
   "name": "EtherTechna",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "description": "Medium.com (clone)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -w --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TORTO21/EtherTechna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TORTO21/EtherTechna/issues"
+  },
+  "homepage": "https://github.com/TORTO21/EtherTechna#readme"
 }
