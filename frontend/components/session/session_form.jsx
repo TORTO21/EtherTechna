@@ -14,6 +14,7 @@ class SessionForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
+    this.props.closeModal()
     const user = Object.assign({}, this.state)
     this.props.submitAction(user)
   }
@@ -23,11 +24,30 @@ class SessionForm extends React.Component {
   }
 
   render () {
+    const greeting = this.props.formType === "Log In"
+    ? <div className="form-greeting">
+        <h1 className="form-header">
+          Welcome back.
+        </h1>
+        <p className="form-description">
+          Sign in to get personalized story recommendations, follow authors and topics you love, and interact with stories.
+        </p>
+      </div>
+    : <div className="form-greeting">
+        <h1 className="form-header">
+          Join EtherTechna.
+        </h1>
+        <p className="form-description">
+        Create an account to receive great stories in your inbox, personalize your homepage, and follow authors and topics that you love.
+        </p>
+      </div>
+
     return (
-      <div>
-        <form
+      <div className="form-session">
+        { greeting }
+        <form 
           onSubmit={ this.handleSubmit }
-          className="form-login">
+          className="form-inputs" >
           <label>Username:
             <input
               type="text"
@@ -50,6 +70,7 @@ class SessionForm extends React.Component {
           </label>
           <input type="submit" value={this.props.formType}/>
         </form>
+        <p className="form-footer">To make Medium work, we log user data and share it with service providers. Click “Sign up” above to accept Medium’s Terms of Service & Privacy Policy.</p>
       </div>
     )
   }

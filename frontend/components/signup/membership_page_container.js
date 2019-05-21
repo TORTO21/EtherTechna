@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import SignupPage from './signup'
+import MembershipPage from './membership_page'
 
 const msp = (state) => {
   return {
@@ -13,4 +13,4 @@ const mdp = (dispatch) => {
   }
 }
 
-export default connect(msp, mdp)(SignupPage)
+export default connect(msp, mdp)(MembershipPage)

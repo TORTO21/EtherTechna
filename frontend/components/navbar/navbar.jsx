@@ -20,20 +20,34 @@ class Navbar extends React.Component {
   //   3) Reading List 
   //   4) Notifications 
   //   5) Profile page / Profile Menu
+  // when on membership page:
+  //   1) Link to Home (EtherTechna)
+  //   2) NavLink to About (Our story)
+  //   3) NavLink to About membership (default)
+  //   4) Button Upgrade (Signin Modal)
 
 
   render () {
-    const navItems = this.props.currentUserId
-      ? <div>
-          <Link to={`/users/${ this.props.currentUserId }`} replace >Profile</Link>
-          <button onClick={ e => this.props.logout() }>Logout</button> {/* temp */}
+    const { currentUserId, logout, openModal } = this.props
+    const navItems = currentUserId
+      ? <div className="nav-logged-in">
+          <Link to={ `/users/${ currentUserId }` } replace >Profile</Link>
+          <button onClick={ e => logout() }>Logout</button> {/* temp */}
         </div>
-      : <div>
-          <Link to="/signup" replace >Become a member</Link>
-          {/* <Link to=# >Sign in</Link> */}
-          <a href="#">Sign in</a> {/* change to Modal */}
-          {/* <Link to=# >Get Started</Link> */}
-          <a href="#">Get Started</a> {/* change to Modal */}
+      : <div className="nav-logged-out">
+          <Link to="/membership" replace >Become a member</Link>
+          <a
+            href="#"
+            onClick={ () => openModal('login') }
+            className="login" >
+              Sign in
+          </a>
+          <a
+            href="#"
+            onClick={ () => openModal('signup') }
+            className="signup">
+              Get Started
+          </a>
         </div>
 
     return (

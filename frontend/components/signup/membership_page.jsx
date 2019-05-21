@@ -1,7 +1,7 @@
 import React from 'react';
 import SignupForm from '../session/signup_form_container'
 
-class SignupPage extends React.Component {
+class MembershipPage extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -9,7 +9,7 @@ class SignupPage extends React.Component {
   render () {
     return (
       <div>
-        <h1>Signup</h1><br/>
+        <h1>Membership</h1><br/>
         <SignupForm />
         <h1>SPLASH INFO</h1>
       </div>
@@ -17,4 +17,4 @@ class SignupPage extends React.Component {
   }
 }
 
-export default SignupPage
+export default MembershipPage

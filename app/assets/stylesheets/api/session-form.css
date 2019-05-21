@@ -1,0 +1,38 @@
+.form-session {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 50px 100px;
+}
+
+.form-greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-greeting p {
+  text-align: center;
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-family: "Lucida Grande";
+  max-width: 100;
+  color: red;
+
+}
+
+.form-header {
+  color: rgba(0, 0, 0, 0.84);
+  font-family: medium-marketing-display-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-footer {
+  color: rgba(0, 0, 0, 0.76);
+}

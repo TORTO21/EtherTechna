@@ -1,8 +1,9 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+import Modal from './modal/modal_container'
 import Navbar from './navbar/navbar_container'
 import MainPage from './main/main_page'
-import SignupPage from './signup/signup_page'
+import MembershipPage from './signup/membership_page'
 import ProfilePage from './profile/profile_page'
 import { AuthRoute, ProtectedRoute } from '../util/route_util'
 
@@ -10,12 +11,13 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util'
 const App = () => {
   return (
     <div>
+      <Modal />
       <Navbar />
-      {/* <Switch> */}
+      <Switch>
         <ProtectedRoute path="/users/:userId" component={ ProfilePage } />
-        <AuthRoute path="/signup" component={ SignupPage } />
+        <AuthRoute path="/membership" component={ MembershipPage } />
         <Route path="/" component={ MainPage } />
-      {/* </Switch> */}
+      </Switch>
     </div>
   )
 }
