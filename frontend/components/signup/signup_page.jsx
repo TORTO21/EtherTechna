@@ -1,4 +1,5 @@
 import React from 'react';
+import SignupForm from '../session/signup_form_container'
 
 class SignupPage extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class SignupPage extends React.Component {
     return (
       <div>
         <h1>Signup</h1><br/>
+        <SignupForm />
         <h1>SPLASH INFO</h1>
       </div>
     )
