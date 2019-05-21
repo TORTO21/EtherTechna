@@ -12,14 +12,15 @@ class Api::SessionsController < ApplicationController
     else
       render json: ['No such user'], status: 404
     end
+  end
 
-    def destroy
-      if current_user
-        logout
-        render json: {}
-      else
-        render json: ['Already Logged Out'], status: 404
-      end
+  def destroy
+    if current_user
+      logout
+      render json: {}
+    else
+      render json: ['Already Logged Out'], status: 404
     end
   end
+
 end
