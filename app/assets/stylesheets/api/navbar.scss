@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    margin: 15px;
+  }
+}
+
+.nav-logo {
+  font-size: 2em;
+  font-family: 'Vidaloka', serif;
+  font-weight: 900;
+}
+
+.nav-menu {
+  box-sizing: border-box;
+  margin-right: 5px;
+
+  a {
+    font-size: 13px;
+    margin-left: 2px;
+  }
+}
+
+.nav-logged-out {
+  display: flex;
+  align-items: center;  
+  
+  .signup {
+    border: 1px solid #03a87c;
+    border-radius: 4px;
+    padding: 10px 15px;
+
+    &:hover {
+      border: 1px solid #039770;
+    }
+  }
+}
+
+.nav-logged-in {
+  
+}

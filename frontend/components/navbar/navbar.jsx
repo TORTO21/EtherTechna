@@ -1,6 +1,4 @@
 import React from 'react'
-import LoginForm from '../session/login_form_container'
-import SignupForm from '../session/signup_form_container'
 import { Link } from 'react-router-dom'
 
 class Navbar extends React.Component {
@@ -29,31 +27,48 @@ class Navbar extends React.Component {
 
   render () {
     const { currentUserId, logout, openModal } = this.props
-    const navItems = currentUserId
+    const navMenu = currentUserId
       ? <div className="nav-logged-in">
-          <Link to={ `/users/${ currentUserId }` } replace >Profile</Link>
-          <button onClick={ e => logout() }>Logout</button> {/* temp */}
+          <Link
+            to={ `/users/${ currentUserId }` }
+            replace
+            className="link" >
+              Profile
+          </Link>
+          <a
+            href="#"
+            onClick={ e => logout() }
+            className="link" >
+              Logout                     {/* temp */}
+          </a>
         </div>
       : <div className="nav-logged-out">
-          <Link to="/membership" replace >Become a member</Link>
+          {/* <Link
+            to="/membership"
+            replace
+            className="link" >
+              Become a member
+          </Link> */}              {/* Temporarily removed */}
           <a
             href="#"
             onClick={ () => openModal('login') }
-            className="login" >
+            className="login link-green" >
               Sign in
           </a>
           <a
             href="#"
             onClick={ () => openModal('signup') }
-            className="signup">
+            className="signup link-green">
               Get Started
           </a>
         </div>
 
     return (
       <div className="navbar">
-        <Link to="/" className="nav-home" replace >EtherTechna</Link>
-        { navItems }
+        <Link to="/" className="nav-logo" replace >EtherTechna</Link>
+        <div className="nav-menu">
+          { navMenu }
+        </div>
       </div>
     )
   }

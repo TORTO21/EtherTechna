@@ -47,23 +47,23 @@ class SessionForm extends React.Component {
     ? <p className="form-switch" >No account? <a
         href="#"
         onClick={ () => openModal('signup') }
-        className="signup link">
+        className="signup link-green">
           Create one
       </a></p>
     : <p className="form-switch" >Already have an Account? <a
         href="#"
         onClick={ () => openModal('login') }
-        className="login link">
+        className="login link-green">
           Sign in
       </a></p>
 
     return (
-      <div className="form-session">
+      <div className="form-container">
         { greeting }
         <a href="#" onClick={ e => closeModal() } className="form-close">&times;</a>
         <form 
           onSubmit={ this.handleSubmit }
-          className="form-container" >
+          className="form-input-container" >
           <input
             type="text"
             onChange={ this.update('username') }
