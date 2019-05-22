@@ -14,7 +14,7 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Vidaloka&display=swap');
 
 main, body, article, section, aside,
 form, div, label, button p, a, ul, li {

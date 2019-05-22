@@ -10,6 +10,10 @@ class User < ApplicationRecord
   
   attr_reader :password
   
+  has_many :stories,
+    foreign_key: :author_id,
+    class_name: :Story
+
   # FGRIPE
   
   def self.find_by_credentials(username, email, password)
