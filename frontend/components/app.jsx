@@ -10,9 +10,9 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util'
 
 const App = () => {
   return (
-    <div>
+    <div className='root-container'>
       <Modal />
-      <Navbar />
+      <Navbar className='navbar-container' />
       <Switch>
         <ProtectedRoute path="/users/:userId" component={ ProfilePage } />
         <AuthRoute path="/membership" component={ MembershipPage } />
