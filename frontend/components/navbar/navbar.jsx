@@ -26,9 +26,17 @@ class Navbar extends React.Component {
 
 
   render () {
-    const { currentUserId, logout, openModal } = this.props
+    const { 
+      currentUserId,
+      currentUser,
+      openModal,
+      logout,
+      loginGuest
+    } = this.props
+
     const navMenu = currentUserId
       ? <div className="nav-logged-in">
+          <p className="nav-user" >Logged in as: { currentUser }</p>
           <Link
             to={ `/users/${ currentUserId }` }
             replace
@@ -49,6 +57,13 @@ class Navbar extends React.Component {
             className="link" >
               Become a member
           </Link> */}              {/* Temporarily removed */}
+          <a
+            href="#"
+            onClick={ e => loginGuest() }
+            className="link" >
+              Demo site features!
+          </a>
+          
           <a
             href="#"
             onClick={ () => openModal('login') }
