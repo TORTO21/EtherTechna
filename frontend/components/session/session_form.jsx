@@ -24,7 +24,8 @@ class SessionForm extends React.Component {
   }
 
   render () {
-    const greeting = this.props.formType === "Log In"
+    const { formType, closeModal, openModal } = this.props
+    const greeting = formType === "Sign in"
     ? <div className="form-greeting">
         <h1 className="form-header">
           Welcome back.
@@ -42,35 +43,55 @@ class SessionForm extends React.Component {
         </p>
       </div>
 
+    const sessionSwitch = formType === "Sign in"
+    ? <p className="form-switch" >No account? <a
+        href="#"
+        onClick={ () => openModal('signup') }
+        className="signup link">
+          Create one
+      </a></p>
+    : <p className="form-switch" >Already have an Account? <a
+        href="#"
+        onClick={ () => openModal('login') }
+        className="login link">
+          Sign in
+      </a></p>
+
     return (
       <div className="form-session">
         { greeting }
+        <a href="#" onClick={ e => closeModal() } className="form-close">&times;</a>
         <form 
           onSubmit={ this.handleSubmit }
-          className="form-inputs" >
-          <label>Username:
-            <input
-              type="text"
-              onChange={ this.update('username') }
-              value={ this.state.username }
-            />
-          </label>
-          <label>Email:
-            <input
-              type="email"
-              onChange={ this.update('email') }
-              value={ this.state.email }
-            />
-          </label>
-          <label>Password:
-            <input 
-              type="password"
-              onChange={ this.update('password') }
-            />
-          </label>
-          <input type="submit" value={this.props.formType}/>
+          className="form-container" >
+          <input
+            type="text"
+            onChange={ this.update('username') }
+            value={ this.state.username }
+            placeholder="Username"
+            className="form-input"
+          />
+          <input
+            type="email"
+            onChange={ this.update('email') }
+            value={ this.state.email }
+            placeholder="Email"
+            className="form-input"
+          />
+          <input 
+            type="password"
+            onChange={ this.update('password') }
+            placeholder="Password"
+            className="form-input"
+          />
+          <input
+            type="submit"
+            value={ formType }
+            className="form-input form-button"
+          />
         </form>
-        <p className="form-footer">To make Medium work, we log user data and share it with service providers. Click “Sign up” above to accept Medium’s Terms of Service & Privacy Policy.</p>
+        { sessionSwitch }
+        <p className="form-footer">To make EtherTechna work, we log user data and share it with service providers. Click "{ formType }" above to accept EtherTechna’s Terms of Service & Privacy Policy.</p>
       </div>
     )
   }

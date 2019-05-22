@@ -2,18 +2,19 @@ import React from 'react'
 import { connect } from 'react-redux'
 import SessionForm from './session_form'
 import { login } from '../../actions/session_actions'
-import { closeModal } from '../../actions/modal_actions'
+import { openModal, closeModal } from '../../actions/modal_actions'
 
 const msp = (state) => {
   return {
-    formType: "Log In"
+    formType: "Sign in"
   }
 }
 
 const mdp = (dispatch) => {
   return {
     submitAction: (user) => dispatch(login(user)),
-    closeModal: () => dispatch(closeModal())
+    closeModal: () => dispatch(closeModal()),
+    openModal: (modal) => dispatch(openModal(modal))
   }
 }
 
