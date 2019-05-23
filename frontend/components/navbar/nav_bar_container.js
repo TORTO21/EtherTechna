@@ -4,11 +4,11 @@ import { logout } from '../../actions/session_actions'
 import { openModal } from '../../actions/modal_actions'
 
 const msp = (state) => {
-  const username = state.entities.users[state.session.currentUserId]
-    ? state.entities.users[state.session.currentUserId].username
+  const currentUser = state.entities.users[state.session.currentUserId]
+    ? state.entities.users[state.session.currentUserId]
     : null
   return {
-    currentUser: username
+    currentUser
   }
 }
 

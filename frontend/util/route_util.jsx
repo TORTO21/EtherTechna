@@ -4,7 +4,7 @@ import { Route, Redirect, withRouter } from 'react-router-dom'
 
 // Renders if logged in
 const Auth = ({ component: Component, path, loggedIn, exact }) => {
-  return <Route path={ path } exact={ exact } render={(props) => {
+  return <Route path={ path } exact={ exact } render={ (props) => {
     return loggedIn
       ? (<Redirect to='/' />)
       : (<Component { ...props } />)
@@ -14,7 +14,7 @@ const Auth = ({ component: Component, path, loggedIn, exact }) => {
 
 // Renders if logged out
 const Protected = ({ component: Component, path, loggedIn, exact }) => {
-  return <Route path={ path } exact={ exact } render={(props) => {
+  return <Route path={ path } exact={ exact } render={ (props) => {
     return loggedIn
       ? (<Component { ...props } />)
       : (<Redirect to='/' />)
@@ -24,7 +24,7 @@ const Protected = ({ component: Component, path, loggedIn, exact }) => {
 
 const msp = (state) => {
   return {
-    loggedIn: Boolean(state.session.id)
+    loggedIn: Boolean(state.session.currentUserId)
   }
 }
 
