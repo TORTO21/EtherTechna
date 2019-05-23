@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-class Navbar extends React.Component {
+class NavBar extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -27,18 +27,17 @@ class Navbar extends React.Component {
 
   render () {
     const { 
-      currentUserId,
       currentUser,
       openModal,
       logout,
       loginGuest
     } = this.props
-
-    const navMenu = currentUserId
+    
+    const navMenu = currentUser
       ? <div className="nav-logged-in">
           <p className="nav-user" >Logged in as: { currentUser }</p>
           <Link
-            to={ `/users/${ currentUserId }` }
+            to={ `/users/${ currentUser.id }` }
             replace
             className="link" >
               Profile
@@ -89,4 +88,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar
+export default NavBar

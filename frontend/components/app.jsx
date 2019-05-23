@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Modal from './modal/modal_container'
-import Navbar from './navbar/navbar_container'
+import NavBar from './navbar/nav_bar_container'
 import MainPage from './main/main_page'
 import MembershipPage from './signup/membership_page'
 import ProfilePage from './profile/profile_page'
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className='root-container'>
       <Modal />
-      <Navbar className='navbar-container' />
+      <NavBar className='navbar-container' />
       <Switch>
         <ProtectedRoute path="/users/:userId" component={ ProfilePage } />
         <AuthRoute path="/membership" component={ MembershipPage } />
