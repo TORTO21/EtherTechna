@@ -2,9 +2,14 @@ class Api::StoriesController < ApplicationController
   before_action :ensure_logged_in, only: %i[create update destroy]
   
   def index
-    debugger
-    @stories = Story.all
-    render :index
+    if params[:user_id]
+      @user = User.find(params[:user_id])
+      @stories = @user.stories
+      render :index
+    else
+      @stories = Story.all
+      render :index
+    end
   end
 
   def show
