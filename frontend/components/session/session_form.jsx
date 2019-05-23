@@ -18,7 +18,6 @@ class SessionForm extends React.Component {
     this.props.submitAction(user).then(
       () => this.props.closeModal(),
       errors => console.log(errors))
-    
   }
 
   update(field) {
@@ -72,8 +71,11 @@ class SessionForm extends React.Component {
 
     return (
       <div className="form-container">
+
         { greeting }
+
         <a href="#" onClick={ e => closeModal() } className="form-close">&times;</a>
+        
         <form 
           onSubmit={ this.handleSubmit }
           className="form-input-container" >
@@ -97,10 +99,12 @@ class SessionForm extends React.Component {
             className="form-input form-button"
           />
         </form>
+        
         <div className="form-footer">
           { sessionSwitch }
           <p className="form-disclaimer" >To make EtherTechna work, we log user data and share it with service providers. Click "{ formType }" above to accept EtherTechna’s Terms of Service & Privacy Policy.</p>
         </div>
+
       </div>
     )
   }
