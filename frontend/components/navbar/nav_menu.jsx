@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import UserAvatar from '../../components/user/user_avatar_container'
 
 class NavMenu extends React.Component {
   constructor(props) {
@@ -72,6 +73,7 @@ class NavMenu extends React.Component {
 
     return (
       <div>
+        <UserAvatar />
         <a
           href="#"
           className="nav-user"

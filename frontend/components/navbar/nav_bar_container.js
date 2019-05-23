@@ -5,8 +5,7 @@ import { openModal } from '../../actions/modal_actions'
 
 const msp = (state) => {
   const currentUser = state.entities.users[state.session.currentUserId]
-    ? state.entities.users[state.session.currentUserId]
-    : null
+    ? state.entities.users[state.session.currentUserId] : null
   return {
     currentUser
   }
