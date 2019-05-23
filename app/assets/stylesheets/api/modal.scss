@@ -11,8 +11,9 @@
 .modal-child {
   overflow: hidden;
   position: fixed;
-  
-  position: absolute;
+  // position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -22,8 +23,15 @@
   padding: 50px;
   margin: 5px;
   border-radius: 4px;
+
 }
 
-body.modal-open {
-  overflow: hidden;
+.modal-login {
+  // background: url(https://cdn-images-1.medium.com/max/900/1*Cs2lqW1GyoPdYqs1U0Xudg.png);
+  background-image: image-url("medium-modal-login-bg.png");
+}
+
+.modal-signup {
+  // background: url(https://cdn-images-1.medium.com/max/900/1*gnUBeL-INIVDk0_GyL8x1g.png); 
+  background-image: image-url("medium-modal-signup-bg.png");
 }
