@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import NavMenu from './nav_menu_container'
 
-class Navbar extends React.Component {
+class NavBar extends React.Component {
   constructor(props) {
     super(props)
+    
   }
 
   // when signed out:
@@ -24,31 +26,17 @@ class Navbar extends React.Component {
   //   3) NavLink to About membership (default)
   //   4) Button Upgrade (Signin Modal)
 
-
   render () {
     const { 
-      currentUserId,
       currentUser,
       openModal,
       logout,
       loginGuest
     } = this.props
-
-    const navMenu = currentUserId
+    
+    const navMenu = currentUser
       ? <div className="nav-logged-in">
-          <p className="nav-user" >Logged in as: { currentUser }</p>
-          <Link
-            to={ `/users/${ currentUserId }` }
-            replace
-            className="link" >
-              Profile
-          </Link>
-          <a
-            href="#"
-            onClick={ e => logout() }
-            className="link" >
-              Logout                     {/* temp */}
-          </a>
+          <NavMenu currentUser={ currentUser } />
         </div>
       : <div className="nav-logged-out">
           {/* <Link
@@ -56,7 +44,7 @@ class Navbar extends React.Component {
             replace
             className="link" >
               Become a member
-          </Link> */}              {/* Temporarily removed */}
+          </Link> */}        {/* Bonus feature */}
           <a
             href="#"
             onClick={ e => loginGuest() }
@@ -89,4 +77,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar
+export default NavBar

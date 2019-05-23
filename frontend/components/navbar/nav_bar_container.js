@@ -1,15 +1,13 @@
 import { connect } from 'react-redux'
-import Navbar from './navbar'
+import Navbar from './nav_bar'
 import { logout } from '../../actions/session_actions'
 import { openModal } from '../../actions/modal_actions'
 
 const msp = (state) => {
-  const username = state.entities.users[state.session.id]
-    ? state.entities.users[state.session.id].username
-    : null
+  const currentUser = state.entities.users[state.session.currentUserId]
+    ? state.entities.users[state.session.currentUserId] : null
   return {
-    currentUserId: state.session.id,
-    currentUser: username
+    currentUser
   }
 }
 

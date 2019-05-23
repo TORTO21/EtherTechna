@@ -14,9 +14,10 @@ class SessionForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
-    this.props.closeModal()
     const user = Object.assign({}, this.state)
-    this.props.submitAction(user)
+    this.props.submitAction(user).then(
+      () => this.props.closeModal(),
+      errors => console.log(errors))
   }
 
   update(field) {
@@ -25,6 +26,7 @@ class SessionForm extends React.Component {
 
   render () {
     const { formType, closeModal, openModal } = this.props
+    
     const greeting = formType === "Sign in"
     ? <div className="form-greeting">
         <h1 className="form-header">
@@ -56,11 +58,24 @@ class SessionForm extends React.Component {
         className="login link-green">
           Sign in
       </a></p>
+    
+    const inputEmail = formType === "Sign in"
+    ? null
+    : <input
+        type="email"
+        onChange={ this.update('email') }
+        value={ this.state.email }
+        placeholder="Email"
+        className="form-input"
+      />
 
     return (
       <div className="form-container">
+
         { greeting }
+
         <a href="#" onClick={ e => closeModal() } className="form-close">&times;</a>
+        
         <form 
           onSubmit={ this.handleSubmit }
           className="form-input-container" >
@@ -71,13 +86,7 @@ class SessionForm extends React.Component {
             placeholder="Username"
             className="form-input"
           />
-          <input
-            type="email"
-            onChange={ this.update('email') }
-            value={ this.state.email }
-            placeholder="Email"
-            className="form-input"
-          />
+          { inputEmail }
           <input 
             type="password"
             onChange={ this.update('password') }
@@ -90,8 +99,12 @@ class SessionForm extends React.Component {
             className="form-input form-button"
           />
         </form>
-        { sessionSwitch }
-        <p className="form-footer">To make EtherTechna work, we log user data and share it with service providers. Click "{ formType }" above to accept EtherTechna’s Terms of Service & Privacy Policy.</p>
+        
+        <div className="form-footer">
+          { sessionSwitch }
+          <p className="form-disclaimer" >To make EtherTechna work, we log user data and share it with service providers. Click "{ formType }" above to accept EtherTechna’s Terms of Service & Privacy Policy.</p>
+        </div>
+
       </div>
     )
   }

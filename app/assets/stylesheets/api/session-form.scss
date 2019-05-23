@@ -1,11 +1,9 @@
 
 .form-container {
-  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  padding: 42px 95px;
   font-size: 13px;
 
   p {
@@ -30,13 +28,14 @@
 
 .form-close {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   font-size: 36px;
   font-weight: 100;
-  line-height: 1;
+  line-height: 1.25rem;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
 
   &:hover {
     color: rgba(0, 0, 0, .85);
@@ -45,18 +44,24 @@
 
 .form-header {
   color: rgba(0, 0, 0, 0.84);
-  /* font-family: medium-marketing-display-font, Georgia, Cambria, "Times New Roman", Times, serif; */
+  font-family: medium-marketing-display-font, Georgia, Cambria, "Times New Roman", Times, serif;
   font-family: 'Vidaloka', serif;
   font-weight: 600;
   font-size: 32px;
-  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  width: 450px;
+  height: 36px;
+  margin: 0 175px 20px 175px;
 }
 
 .form-description {
   font-size: 15px;
-  padding: 0 30px;
-  line-height: 1.5rem;
-  margin: 15px 0;
+  line-height: 1.6rem;
+  letter-spacing: 0.5px;
+  width: 360px;
+  height: 72px;
+  margin: 0 220px 25px 220px;
 }
 
 .form-input-container {
@@ -66,28 +71,37 @@
 }
 
 .form-input {
-  text-align: center;
-  width: 215px;
-  height: 33px;
-  border-radius: 3px;
-  margin: 7px;
-  border: 1px solid rgba(172, 172, 172, 0.6);
   font-size: 14px;
+  text-align: center;
+  width: 298px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid rgba(172, 172, 172, 0.6);
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.04);
-  padding: 1.5px
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .form-button {
-  width: 220px;
-  height: 38px;
+  width: 300px;
+  height: 37px;
+  cursor: pointer;
 }
 
 .form-switch {
   margin: 14px;
 }
 
-.form-footer {
+.form-foother {
+  width: 800px;
+  height: 95px;
+  margin-top: 10px;
+}
+
+.form-disclaimer {
   color: rgba(0, 0, 0, 0.76);
   line-height: 1.2rem;
-  margin: 5px;
+  width: 400px;
+  height: 60px;
+  margin: 15px 200px 0 200px;
 }

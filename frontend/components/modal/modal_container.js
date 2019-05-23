@@ -3,8 +3,10 @@ import Modal from './modal'
 import { closeModal } from '../../actions/modal_actions'
 
 const msp = (state) => {
+  const { session } = state.errors
   return {
-    modal: state.ui.modal
+    modal: state.ui.modal,
+    errors: session
   }
 }
 
