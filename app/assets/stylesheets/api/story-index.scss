@@ -1,7 +1,19 @@
 .story-index-container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    a {
+      width: fit-content;
+    }
+  }
 }
 
 .story-lead-in {

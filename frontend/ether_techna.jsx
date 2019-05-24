@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import configureStore from './store/store'
 import * as SessionActions from './actions/session_actions'
 import * as StoryActions from './actions/story_actions'
+import * as UserActions from './actions/user_actions'
 import Root from './components/root'
 
 
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.createStory = StoryActions.createStory
   window.updateStory = StoryActions.updateStory
   window.deleteStory = StoryActions.deleteStory
+  window.fetchUser = UserActions.fetchUser
 
   ReactDOM.render(<Root store={ store } />, root)
 })

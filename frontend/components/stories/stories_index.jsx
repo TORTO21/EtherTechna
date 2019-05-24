@@ -2,10 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 class StoriesIndex extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
+ 
   componentDidMount() {
     this.props.fetchStories()
   }
@@ -13,17 +10,15 @@ class StoriesIndex extends React.Component {
   render () {
     const { stories } = this.props
     const indexLis = stories.map( story => {
-      return <li key={ story.id } className="story-index-container">
+      return <li key={ story.id } >
         <Link
           to={ `/stories/${ story.id }` }
-          className="story-title"
-          story={ story } >
+          className="story-title" >
             { story.title }
         </Link>
         <Link
           to={ `/stories/${ story.id }` }
-          className="story-lead-in link"
-          story={ story } >
+          className="story-lead-in link" >
             { story.lead_in }
         </Link>
         <Link
@@ -34,7 +29,7 @@ class StoriesIndex extends React.Component {
       </li>
     })
     return (
-      <div>
+      <div  className="story-index-container" >
         <ul>
           { indexLis }
         </ul>    
