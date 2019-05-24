@@ -57,4 +57,31 @@
 .nav-menu-stories li:first-of-type {
 	color: #000;
 	background-color: light-gray;
+}.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #9c9c9c;
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 16px;
+	margin-left: -16px;
+}
+.arrow_box:before {
+	border-color: rgba(156, 156, 156, 0);
+	border-bottom-color: #9c9c9c;
+	border-width: 17px;
+	margin-left: -17px;
 }

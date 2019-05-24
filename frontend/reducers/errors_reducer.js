@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux'
 
-import sessionErrorsReducers from './session_errors_reducer'
+import sessionErrorsReducer from './errors/session_errors_reducer'
+import storiesErrorsReducer from './errors/stories_errors_reducer'
 
 const errorsReducer = combineReducers({
-  session: sessionErrorsReducers
+  session: sessionErrorsReducer,
+  stories: storiesErrorsReducer,
 })
 
 export default errorsReducer

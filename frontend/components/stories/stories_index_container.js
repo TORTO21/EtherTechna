@@ -6,7 +6,6 @@ const msp = (state) => {
   // debugger
   return {
     stories: Object.values(state.entities.stories),
-    // users: Object.values(state.entities.users)
   }
 }
 

@@ -4,7 +4,8 @@ import Modal from './modal/modal_container'
 import NavBar from './navbar/nav_bar_container'
 import MainPage from './main/main_page'
 import MembershipPage from './signup/membership_page'
-import ProfilePage from './profile/profile_page'
+import StoryItem from '../components/stories/story_item'
+import UserPage from '../components/user/user_page_container'
 import { AuthRoute, ProtectedRoute } from '../util/route_util'
 
 
@@ -14,8 +15,10 @@ const App = () => {
       <Modal />
       <NavBar className='navbar-container' />
       <Switch>
-        <ProtectedRoute path="/users/:userId" component={ ProfilePage } />
+        <Route path="/users/:userId" component={ UserPage } />
         <AuthRoute path="/membership" component={ MembershipPage } />
+        <Route path="stories/:storyId/edit" />
+        <Route path="/stories/:storyId" component={ StoryItem } />
         <Route path="/" component={ MainPage } />
       </Switch>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-class ProfilePage extends React.Component {
+class StoryItem extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -8,10 +8,10 @@ class ProfilePage extends React.Component {
   render () {
     return (
       <div>
-        <h1>UserProfile</h1>
+        
       </div>
     )
   }
 }
 
-export default ProfilePage
+export default StoryItem
