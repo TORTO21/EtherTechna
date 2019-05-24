@@ -19,8 +19,9 @@ class Api::StoriesController < ApplicationController
 
   def create
     @story = Story.new(story_params)
+    @story.author_id = current_user.id
     if @story.save
-      render :show, notice: 'Story successfully created.'
+      render :show, notice: 'Story successfully created.', status: 201
     else
       render json: @story.errors.full_messages, status: 422
     end
@@ -28,8 +29,8 @@ class Api::StoriesController < ApplicationController
 
   def update
     @story = Story.find(params[:id])
-    if @story.update(story_params)
-      render :show, notice: 'Story successfully updated.'
+    if @story.author_id == current_user.id && @story.update(story_params)
+      render :show, notice: 'Story successfully updated.', status: 302
     else
       render json: @story.errors.full_messages, status: 422
     end
@@ -38,7 +39,7 @@ class Api::StoriesController < ApplicationController
   def destroy
     @story = Story.find(params[:id])
     if @story.destroy
-      render :index, notice: 'Story successfully deleted.'
+      render json: ['Story successfully deleted.'], status: 200
     else
       render json: ['Not possible to delete Story.'], status: 422
     end

@@ -1,4 +1,4 @@
-import * as APIStoryUtil from '../util/session_api_util'
+import * as APIStoryUtil from '../util/story_api_util'
 
 export const RECEIVE_STORIES = 'RECEIVE_STORIES'
 export const RECEIVE_STORY = 'RECEIVE_STORY'

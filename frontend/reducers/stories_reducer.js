@@ -17,7 +17,7 @@ const storiesReducer = (state = {}, action) => {
       return merge({}, state, nextState)
     case REMOVE_STORY:
       const newState = merge({}, state)
-      delete newState[action.storyId]
+      delete newState.stories[action.storyId]
       return newState
     default:
       return state
