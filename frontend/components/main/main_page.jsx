@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import StoriesIndex from '../stories/stories_index_container'
 
 class MainPage extends React.Component {
-
 
   render() {
     return (
@@ -13,7 +13,10 @@ class MainPage extends React.Component {
           <li>personlized stories (if logged in)</li>
           <li>popular stories</li>
           <li>story index</li>
+          <br />
+          <br />
         </ul>
+        <StoriesIndex />
       </div>
     )
   }
