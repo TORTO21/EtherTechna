@@ -21,7 +21,7 @@ class NavMenu extends React.Component {
   }
 
   closeMenu() {
-    if (!this.dropdownMenu.contains(event.target)) {
+    if (this.dropDownMenu && !this.dropdownMenu.contains(event.target)) {
       this.setState(
         { navMenuOpen: false },
         () => { document.removeEventListener('click', this.closeMenu) }
