@@ -1,0 +1,21 @@
+.link {
+  color: rgba(0, 0, 0, 0.54);
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+.link-green {
+  color: #03a87c;
+ 
+  &:hover {
+    color: #039770;
+  }
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
