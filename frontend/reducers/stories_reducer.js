@@ -4,6 +4,7 @@ import {
   RECEIVE_STORIES,
   RECEIVE_STORY,
   REMOVE_STORY,
+  CLEAR_STORIES,
 } from '../actions/story_actions'
 
 const storiesReducer = (state = {}, action) => {
@@ -19,6 +20,8 @@ const storiesReducer = (state = {}, action) => {
       const newState = merge({}, state)
       delete newState.stories[action.storyId]
       return newState
+    case CLEAR_STORIES:
+      return {}
     default:
       return state
   }

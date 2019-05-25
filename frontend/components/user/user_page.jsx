@@ -1,6 +1,6 @@
 import React from 'react'
 import StoryIndex from '../stories/stories_index_container'
-import { StoryIndexer } from '../../util/story_indexer'
+import StoryIndexer from '../../util/story_indexer'
 
 class UserPage extends React.Component {
  
@@ -10,13 +10,13 @@ class UserPage extends React.Component {
     this.props.fetchUser(userId)
   }
 
-  componentDidUpdate(prevProps) {
-    const { userId } = this.props.match.params
-    if(prevProps.match.params.userId !== userId) {
-      this.props.fetchUserStories(userId)
-      this.props.fetchUser(userId)
-    }
-  }
+  // componentDidUpdate(prevProps) {
+  //   const { userId } = this.props.match.params
+  //   if(prevProps.match.params.userId !== userId) {
+  //     this.props.fetchUserStories(userId)
+  //     this.props.fetchUser(userId)
+  //   }
+  // }
 
   render () {
     const { user, stories } = this.props

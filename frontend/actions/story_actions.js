@@ -4,6 +4,7 @@ export const RECEIVE_STORIES = 'RECEIVE_STORIES'
 export const RECEIVE_STORY = 'RECEIVE_STORY'
 export const RECEIVE_STORY_ERRORS = 'RECEIVE_STORY_ERRORS'
 export const REMOVE_STORY = 'REMOVE_STORY'
+export const CLEAR_STORIES = 'CLEAR_STORIES'
 
 const receiveStories = (stories) => {
   return {
@@ -30,6 +31,12 @@ const receiveStoryErrors = (errors) => {
   return {
     type: RECEIVE_STORY_ERRORS,
     errors
+  }
+}
+
+export const clearStories = () => {
+  return {
+    type: CLEAR_STORIES
   }
 }
 

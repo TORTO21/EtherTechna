@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { StoryIndexer } from '../../util/story_indexer'
+import StoryIndexer from '../../util/story_indexer'
 
 class StoriesIndex extends React.Component {
  
@@ -10,25 +10,6 @@ class StoriesIndex extends React.Component {
 
   render () {
     const { stories } = this.props
-    const indexLis = stories.map( story => {
-      return <li key={ story.id } >
-        <Link
-          to={ `/stories/${ story.id }` }
-          className="story-title" >
-            { story.title }
-        </Link>
-        <Link
-          to={ `/stories/${ story.id }` }
-          className="story-lead-in link" >
-            { story.lead_in }
-        </Link>
-        <Link
-          to={ `/users/${ story.author_id }` }
-          className="story-author" >
-            { story.author }
-        </Link>
-      </li>
-    })
     return (
       <div  className="story-index-container" >
         <ul>
