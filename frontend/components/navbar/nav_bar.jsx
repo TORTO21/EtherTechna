@@ -5,7 +5,6 @@ import NavMenu from './nav_menu_container'
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
-    
   }
 
   // when signed out:
@@ -45,25 +44,23 @@ class NavBar extends React.Component {
             className="link" >
               Become a member
           </Link> */}        {/* Bonus feature */}
-          <a
-            href="#"
+          <div
             onClick={ e => loginGuest() }
             className="link" >
               Demo site features!
-          </a>
+          </div>
           
-          <a
-            href="#"
+          <div
             onClick={ () => openModal('login') }
             className="login link-green" >
               Sign in
-          </a>
-          <a
-            href="#"
+          </div>
+
+          <div
             onClick={ () => openModal('signup') }
             className="signup link-green">
               Get Started
-          </a>
+          </div>
         </div>
 
     return (

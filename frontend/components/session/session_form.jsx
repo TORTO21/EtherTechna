@@ -74,7 +74,7 @@ class SessionForm extends React.Component {
 
         { greeting }
 
-        <a href="#" onClick={ e => closeModal() } className="form-close">&times;</a>
+        <div onClick={ e => closeModal() } className="link form-close">&times;</div>
         
         <form 
           onSubmit={ this.handleSubmit }

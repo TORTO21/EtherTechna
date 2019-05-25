@@ -36,10 +36,18 @@
   display: flex;
   align-items: center;
   
+  div {
+    font-size: 13px;
+    height: 22px;
+    margin-right: 16px;
+    padding: 0;
+  }
+
   .signup {
+    height: 35px;
     border: 1px solid #03a87c;
     border-radius: 4px;
-    padding: 10px 15px;
+    padding: 0px 16px;
 
     &:hover {
       border: 1px solid #039770;
