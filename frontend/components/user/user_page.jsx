@@ -1,5 +1,7 @@
 import React from 'react'
 import StoryIndex from '../stories/stories_index_container'
+import { StoryIndexer } from '../../util/story_indexer'
+
 class UserPage extends React.Component {
  
   componentDidMount() {
@@ -23,8 +25,8 @@ class UserPage extends React.Component {
 
     return (
       <div>
-        <h1>Welcome to { user.username }'s profile</h1>
-        
+        <h1>{ user.username }</h1>
+        <StoryIndexer stories={ stories } />
       </div>
     )
   }

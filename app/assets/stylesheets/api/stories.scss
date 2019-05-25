@@ -5,4 +5,34 @@
 .story-item-container {
   display: flex;
   flex-direction: column;
+  width: 480;
+}
+
+.story-title {
+  display: flexbox;
+  max-height: 84px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;
+  font-family:
+    medium-content-sans-serif-font,
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    "Lucida Sans",
+    Geneva,
+    Arial,
+    sans-serif;
+}
+
+.story-lead-in {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.story-author {
+
 }

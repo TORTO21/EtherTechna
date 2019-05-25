@@ -3,7 +3,6 @@ import StoriesIndex from './stories_index'
 import { fetchStories } from '../../actions/story_actions'
 
 const msp = (state) => {
-  // debugger
   return {
     stories: Object.values(state.entities.stories),
   }

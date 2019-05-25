@@ -52,13 +52,13 @@ class NavBar extends React.Component {
           
           <div
             onClick={ () => openModal('login') }
-            className="login link-green" >
+            className="login link-green link" >
               Sign in
           </div>
 
           <div
             onClick={ () => openModal('signup') }
-            className="signup link-green">
+            className="signup link-green link">
               Get Started
           </div>
         </div>

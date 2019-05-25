@@ -11,9 +11,19 @@
   }
 }
 
+.link-gray {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.link-black {
+  color: rgba(0, 0, 0, 0.84);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .link-green {
-  display: flex;
-  align-items: center;
   font-size: 13px;
   color: #03a87c;
  

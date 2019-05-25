@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { StoryIndexer } from '../../util/story_indexer'
 
 class StoriesIndex extends React.Component {
  
@@ -31,7 +32,7 @@ class StoriesIndex extends React.Component {
     return (
       <div  className="story-index-container" >
         <ul>
-          { indexLis }
+          <StoryIndexer stories={ stories } />
         </ul>    
       </div>
     )
