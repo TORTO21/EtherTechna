@@ -1,5 +1,12 @@
 .story-index-container {
-
+  font-family: medium-content-sans-serif-font,
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    "Lucida Sans",
+    Geneva,
+    Arial,
+    sans-serif;
+    
   ul {
     display: flex;
     flex-direction: column;
@@ -17,5 +24,10 @@
 }
 
 .story-lead-in {
+  font-size: 15px;
   margin-top: 2px;
+}
+
+.story-author {
+  
 }

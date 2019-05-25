@@ -8,9 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1032px;
+  max-width: 1032px;
   height: 65;
   padding: 0 20px;
+  margin: 0 auto;
 
   a {
     margin: 15px;

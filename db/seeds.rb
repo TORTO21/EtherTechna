@@ -30,6 +30,7 @@ Story.destroy_all
 story_1 = Story.create(
   title: 'THE PRACTICE & SCIENCE OF DRAWING',
   lead_in: 'Before you learn to draw, you must learn how to see.',
+  category: 'Art',
   body: "An act of vision is not so simple a matter as the student who asked her master if she should “paint nature as she saw nature” would seem to have thought. And his answer, “Yes, madam, provided you don't see nature as you paint nature,” expressed the first difficulty the student of painting has to face: the difficulty of learning to see.
 
   Let us roughly examine what we know of vision. Science tells us that all objects are made visible to us by means of light; and that white light, by which we see things in what may be called their normal aspect, is composed of all the colours of the solar spectrum, as may be seen in a rainbow; a phenomenon caused, as everybody knows, by the sun's rays being split up into their component parts.
@@ -40,6 +41,7 @@ story_1 = Story.create(
 story_2 = Story.create(
   title: 'THE REPUBLIC: BOOK I',
   lead_in: 'Polemarchus, the unbending',
+  category: 'Philosophy',
   body: "I went down yesterday to the Piraeus with Glaucon the son of Ariston, that I might offer up my prayers to the goddess (Bendis, the Thracian Artemis.); and also because I wanted to see in what manner they would celebrate the festival, which was a new thing. I was delighted with the procession of the inhabitants; but that of the Thracians was equally, if not more, beautiful. When we had finished our prayers and viewed the spectacle, we turned in the direction of the city; and at that instant Polemarchus the son of Cephalus chanced to catch sight of us from a distance as we were starting on our way home, and told his servant to run and bid us wait for him. The servant took hold of me by the cloak behind, and said: Polemarchus desires you to wait.
 
   I turned round, and asked him where his master was.
@@ -68,6 +70,7 @@ story_2 = Story.create(
 story_3 = Story.create(
   title: 'THE REPUBLIC: BOOK II',
   lead_in: 'Glaucon, the persistent',
+  category: 'Philosophy',
   body: "With these words I was thinking that I had made an end of the discussion; but the end, in truth, proved to be only a beginning. For Glaucon, who is always the most pugnacious of men, was dissatisfied at Thrasymachus' retirement; he wanted to have the battle out. So he said to me: Socrates, do you wish really to persuade us, or only to seem to have persuaded us, that to be just is always better than to be unjust?
 
   I should wish really to persuade you, I replied, if I could.
@@ -96,6 +99,7 @@ story_3 = Story.create(
 story_4 = Story.create(
   title: 'THE REPUBLIC: BOOK III',
   lead_in: 'Socrates, the unpersuaded',
+  category: 'Philosophy',
   body: "Such then, I said, are our principles of theology—some tales are to be told, and others are not to be told to our disciples from their youth upwards, if we mean them to honour the gods and their parents, and to value friendship with one another.
 
   Yes; and I think that our principles are right, he said.
@@ -148,6 +152,7 @@ story_4 = Story.create(
 story_5 = Story.create(
   title: 'Think & Grow Rich: Chapter 6',
   lead_in: 'Imagination: The Workshop of the Mind',
+  category: 'Mental Health',
   body: "The imagination is literally the workshop wherein are fashioned all plans created by man. The impulse, the DESIRE, is given shape, form, and ACTION through the aid of the imaginative faculty of the mind.
   It has been said that man can create anything which he can imagine.
   Of all the ages of civilization, this is the most favorable for the development of the imagination, because it is an age of rapid change. On every hand one may contact stimuli which develop the imagination.

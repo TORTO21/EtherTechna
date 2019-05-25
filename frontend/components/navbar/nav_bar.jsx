@@ -8,21 +8,21 @@ class NavBar extends React.Component {
   }
 
   // when signed out:
-  //   1) Link to Home (EtherTechna)
+  //   DONE) Link to Home (EtherTechna)
   //   2) Search
   //   3) Link to signup splash
-  //   4) link to sign in
-  //   5) link to signup
+  //   DONE) link to sign in
+  //   DONE) link to signup
   // when signed in:
-  //   1) Link to Home (EtherTechna)
+  //   DONE) Link to Home (EtherTechna)
   //   2) Search 
   //   3) Reading List 
   //   4) Notifications 
-  //   5) Profile page / Profile Menu
+  //   DONE) Profile page / Profile Menu
   // when on membership page:
-  //   1) Link to Home (EtherTechna)
-  //   2) NavLink to About (Our story)
-  //   3) NavLink to About membership (default)
+  //   DONE) Link to Home (EtherTechna)
+  //   2) NavLink to About ("Our story")
+  //   3) NavLink to About "Membership" (default)
   //   4) Button Upgrade (Signin Modal)
 
   render () {

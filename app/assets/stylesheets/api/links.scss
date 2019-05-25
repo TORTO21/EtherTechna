@@ -16,8 +16,10 @@
   color: rgba(0, 0, 0, 0.54);
 }
 
-.link-black {
+.link-author {
+  font-size: 15px;
   color: rgba(0, 0, 0, 0.84);
+
   &:hover {
     text-decoration: underline;
   }

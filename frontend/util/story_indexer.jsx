@@ -28,7 +28,8 @@ class StoryIndexer extends React.Component {
         </Link>
         <Link
           to={ `/users/${ story.author_id }` }
-          className="story-author " >
+          replace
+          className="story-author link-author" >
             { story.author }
         </Link>
       </li>
