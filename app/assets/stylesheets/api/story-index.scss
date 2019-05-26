@@ -11,16 +11,33 @@
     display: flex;
     flex-direction: column;
   }
+    
+  .story-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 656px;
+    max-height: 171px;
+    margin-bottom: 48px;
+  }
 
-  li {
+  .links-container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    width: 480px;
+    margin-right: 24px;
 
     a {
       width: fit-content;
     }
   }
+}
+
+.story-image {
+  max-height: 171px;
+  width: 152px;
+  object-fit: cover;
 }
 
 .story-lead-in {

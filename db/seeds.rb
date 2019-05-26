@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'open-uri'
+
 User.destroy_all
 guest = User.create(username: 'guest', email: 'guest@EtherTechna.com', password: 'password')
 
@@ -38,6 +40,9 @@ story_1 = Story.create(
   This light travels in straight lines and, striking objects before us, is reflected in all directions. Some of these rays passing through a point situated behind the lenses of the eye, strike the retina. The multiplication of these rays on the retina produces a picture of whatever is before the eye, such as can be seen on the ground glass at the back of a 39photographer's camera, or on the table of a camera obscura, both of which instruments are constructed roughly on the same principle as the human eye.",
   author_id: User.find_by(username: 'Harold Speed').id
 )
+file_1 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/pawel-czerwinski-1612026-unsplash.jpg')
+story_1.image.attach(io: file_1, filename: 'pawel-czerwinski-1612026-unsplash.jpg')
+
 story_2 = Story.create(
   title: 'THE REPUBLIC: BOOK I',
   lead_in: 'Polemarchus, the unbending',
@@ -67,6 +72,9 @@ story_2 = Story.create(
   Certainly not, replied Glaucon.",
   author_id: User.find_by(username: 'Plato').id
 )
+file_2 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Polemarchus.jpg')
+story_2.image.attach(io: file_2, filename: 'Polemarchus.jpg')
+
 story_3 = Story.create(
   title: 'THE REPUBLIC: BOOK II',
   lead_in: 'Glaucon, the persistent',
@@ -96,6 +104,9 @@ story_3 = Story.create(
   I know, I said, that this is their manner of thinking, and that this was the thesis which Thrasymachus was maintaining just now, when he censured justice and praised injustice. But I am too stupid to be convinced by him.",
   author_id: User.find_by(username: 'Plato').id
 )
+file_3 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Glaucon.jpg')
+story_3.image.attach(io: file_3, filename: 'Glaucon.jpg')
+
 story_4 = Story.create(
   title: 'THE REPUBLIC: BOOK III',
   lead_in: 'Socrates, the unpersuaded',
@@ -149,6 +160,9 @@ story_4 = Story.create(
   Undoubtedly.",
   author_id: User.find_by(username: 'Plato').id
 )
+file_4 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Socrates.jpg')
+story_4.image.attach(io: file_4, filename: 'Socrates.jpg')
+
 story_5 = Story.create(
   title: 'Think & Grow Rich: Chapter 6',
   lead_in: 'Imagination: The Workshop of the Mind',
@@ -161,3 +175,5 @@ story_5 = Story.create(
   ",
   author_id: User.find_by(username: 'Napoleon Hill').id
 )
+file_5 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/markus-spiske-1611750-unsplash.jpg')
+story_5.image.attach(io: file_5, filename: 'markus-spiske-1611750-unsplash.jpg')

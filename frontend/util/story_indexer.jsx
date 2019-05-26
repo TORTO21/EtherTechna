@@ -14,24 +14,34 @@ class StoryIndexer extends React.Component {
 
     if (!stories) return null
 
+    
+
     const storyLis = stories.map(story => {
-      return <li key={ story.id } >
+      const { id, title, lead_in, author_id, author, image_url, } = story
+      return <li key={ id } className="story-item-container" >
+        <div className="links-container">
         <Link
-          to={ `/stories/${ story.id }` }
+          to={ `/stories/${ id }` }
           className="story-title" >
-            { story.title }
+            { title }
         </Link>
         <Link
-          to={ `/stories/${ story.id }` }
+          to={ `/stories/${ id }` }
           className="story-lead-in link-gray" >
-            { story.lead_in }
+            { lead_in }
         </Link>
         <Link
-          to={ `/users/${ story.author_id }` }
+          to={ `/users/${ author_id }` }
           replace
           className="story-author link-author" >
-            { story.author }
+            { author }
         </Link>
+        </div>
+        <div className="image-container">
+          <Link to={ `/stories/${ id }` } replace >
+            <img src={ image_url } alt={ title } className="story-image"/>    
+          </Link>
+        </div>
       </li>
     })
 

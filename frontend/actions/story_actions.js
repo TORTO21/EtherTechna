@@ -44,7 +44,7 @@ export const fetchStories = () => (dispatch) => {
   return APIStoryUtil.fetchStories()
     .then(
       (stories) => dispatch(receiveStories(stories)),
-      (errors) => dispatch(receiveStoryErrors(errors))
+      (errors) => dispatch(receiveStoryErrors(errors.responseJSON))
     )
 }
 
@@ -52,7 +52,7 @@ export const fetchUserStories = (userId) => (dispatch) => {
   return APIStoryUtil.fetchUserStories(userId)
     .then(
       (stories) => dispatch(receiveStories(stories)),
-      (errors) => dispatch(receiveStoryErrors(errors))
+      (errors) => dispatch(receiveStoryErrors(errors.responseJSON))
     )
 }
 
@@ -60,7 +60,7 @@ export const fetchStory = (storyId) => (dispatch) => {
   return APIStoryUtil.fetchStory(storyId)
     .then(
       (story) => dispatch(receiveStory(story)),
-      (errors) => dispatch(receiveStoryErrors(errors))
+      (errors) => dispatch(receiveStoryErrors(errors.responseJSON))
     )
 }
 
@@ -68,7 +68,7 @@ export const createStory = (story) => (dispatch) => {
   return APIStoryUtil.createStory(story)
     .then(
       (story) => dispatch(receiveStory(story)),
-      (errors) => dispatch(receiveStoryErrors(errors))
+      (errors) => dispatch(receiveStoryErrors(errors.responseJSON))
     )
 }
 
@@ -76,7 +76,7 @@ export const updateStory = (story) => (dispatch) => {
   return APIStoryUtil.updateStory(story)
     .then(
       (story) => dispatch(receiveStory(story)),
-      (errors) => dispatch(receiveStoryErrors(errors))
+      (errors) => dispatch(receiveStoryErrors(errors.responseJSON))
     )
 }
 
@@ -84,6 +84,6 @@ export const deleteStory = (storyId) => (dispatch) => {
   return APIStoryUtil.deleteStory(storyId)
     .then(
       () => dispatch(removeStory(storyId)),
-      (errors) => dispatch(receiveStoryErrors(errors))
+      (errors) => dispatch(receiveStoryErrors(errors.responseJSON))
     )
 }
