@@ -8,6 +8,8 @@ class MainPage extends React.Component {
     return (
       <div>
         <h1>MAIN PAGE</h1>
+        
+        <StoriesIndex className="banana"/>
         <ul>
           <li>featured stories</li>
           <li>personlized stories (if logged in)</li>
@@ -16,7 +18,6 @@ class MainPage extends React.Component {
           <br />
           <br />
         </ul>
-        <StoriesIndex />
       </div>
     )
   }

@@ -46,18 +46,22 @@ class SessionForm extends React.Component {
       </div>
 
     const sessionSwitch = formType === "Sign in"
-    ? <p className="form-switch" >No account? <a
-        href="#"
-        onClick={ () => openModal('signup') }
-        className="signup link-green">
-          Create one
-      </a></p>
-    : <p className="form-switch" >Already have an Account? <a
-        href="#"
-        onClick={ () => openModal('login') }
-        className="login link-green">
-          Sign in
-      </a></p>
+    ? <div className="form-switch" >
+        <div>No account?&nbsp;</div>
+        <div
+          onClick={ () => openModal('signup') }
+          className="signup link-green">
+            Create one
+        </div>
+      </div>
+    : <div className="form-switch" >
+        <div>Already have an Account?&nbsp;</div>
+        <div
+          onClick={ () => openModal('login') }
+          className="login link-green">
+            Sign in
+        </div>
+      </div>
     
     const inputEmail = formType === "Sign in"
     ? null

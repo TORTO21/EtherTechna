@@ -17,7 +17,6 @@
 }
 
 .link-author {
-  font-size: 15px;
   color: rgba(0, 0, 0, 0.84);
 
   &:hover {
@@ -28,6 +27,7 @@
 .link-green {
   font-size: 13px;
   color: #03a87c;
+  cursor: pointer;
  
   &:hover {
     color: #039770;

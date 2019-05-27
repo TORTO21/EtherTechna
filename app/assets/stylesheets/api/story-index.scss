@@ -14,7 +14,6 @@
     
   .story-item-container {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     width: 656px;
@@ -25,26 +24,60 @@
   .links-container {
     display: flex;
     flex-direction: column;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
     width: 480px;
+    // height: 171px;
+    max-height: 171px;
     margin-right: 24px;
-
+    justify-content: space-between;
+    align-content: space-between;
+    
     a {
       width: fit-content;
     }
+    
+    // .row {
+    //   flex: 1;
+    // }
   }
+}
+
+.story-title {
+  max-height: 84px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  // font-family: sans-serif;
+}
+
+.story-lead-in {
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+.story-author {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.story-tail {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .story-image {
   max-height: 171px;
   width: 152px;
   object-fit: cover;
-}
-
-.story-lead-in {
-  font-size: 15px;
-  margin-top: 2px;
-}
-
-.story-author {
-  
 }

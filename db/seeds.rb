@@ -42,6 +42,7 @@ story_1 = Story.create(
 )
 file_1 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/pawel-czerwinski-1612026-unsplash.jpg')
 story_1.image.attach(io: file_1, filename: 'pawel-czerwinski-1612026-unsplash.jpg')
+story_1.update(created_at: Time.parse("August 27, 2008, 12:00am UTC +0").strftime("%a, %d %b %Y %k:%M:%S %Z %z"))
 
 story_2 = Story.create(
   title: 'THE REPUBLIC: BOOK I',
@@ -74,6 +75,7 @@ story_2 = Story.create(
 )
 file_2 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Polemarchus.jpg')
 story_2.image.attach(io: file_2, filename: 'Polemarchus.jpg')
+story_2.update(created_at: Time.parse("December 6, 2004, 12:00am UTC +0").strftime("%a, %d %b %Y %k:%M:%S %Z %z"))
 
 story_3 = Story.create(
   title: 'THE REPUBLIC: BOOK II',
@@ -106,6 +108,7 @@ story_3 = Story.create(
 )
 file_3 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Glaucon.jpg')
 story_3.image.attach(io: file_3, filename: 'Glaucon.jpg')
+story_3.update(created_at: Time.parse("December 6, 2004, 12:00am UTC +0").strftime("%a, %d %b %Y %k:%M:%S %Z %z"))
 
 story_4 = Story.create(
   title: 'THE REPUBLIC: BOOK III',
@@ -162,6 +165,7 @@ story_4 = Story.create(
 )
 file_4 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Socrates.jpg')
 story_4.image.attach(io: file_4, filename: 'Socrates.jpg')
+story_4.update(created_at: Time.parse("December 6, 2004, 12:00am UTC +0").strftime("%a, %d %b %Y %k:%M:%S %Z %z"))
 
 story_5 = Story.create(
   title: 'Think & Grow Rich: Chapter 6',
@@ -177,3 +181,4 @@ story_5 = Story.create(
 )
 file_5 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/markus-spiske-1611750-unsplash.jpg')
 story_5.image.attach(io: file_5, filename: 'markus-spiske-1611750-unsplash.jpg')
+story_5.update(created_at: Time.parse("December 1, 2008, 12:00am UTC +0").strftime("%a, %d %b %Y %k:%M:%S %Z %z"))

@@ -12,16 +12,15 @@ class NavMenu extends React.Component {
     this.closeMenu = this.closeMenu.bind(this)
   }
 
-  openMenu(e) {
-    e.preventDefault()
+  openMenu() {
     this.setState(
       { navMenuOpen: true },
       () => { document.addEventListener('click', this.closeMenu) }
     )
   }
 
-  closeMenu() {
-    if (this.dropDownMenu && !this.dropdownMenu.contains(event.target)) {
+  closeMenu(e) {
+    if (!this.dropdownMenu.contains(e.target)) {
       this.setState(
         { navMenuOpen: false },
         () => { document.removeEventListener('click', this.closeMenu) }
@@ -31,11 +30,10 @@ class NavMenu extends React.Component {
 
   render () {
     const { logout, currentUser } = this.props
-    
     const nav_menu = this.state.navMenuOpen 
     ? <ul
         id="nav-menu-dropdown"
-        className="nav-menu-dropdown hidden" 
+        className="nav-menu-dropdown" 
         ref={ (el) => { this.dropdownMenu = el } }
       >
         <li>
@@ -74,12 +72,11 @@ class NavMenu extends React.Component {
     return (
       <div>
         <UserAvatar />
-        <a
-          href="#"
+        <div
           className="nav-user"
           onClick={ this.openMenu } >
           Logged in as: { currentUser.username }
-        </a>
+        </div>
         { nav_menu }
       </div>
     )
