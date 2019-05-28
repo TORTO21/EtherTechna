@@ -20,7 +20,7 @@ class NavMenu extends React.Component {
   }
 
   closeMenu(e) {
-    if (!this.dropdownMenu.contains(e.target)) {
+    if (this.dropdownMenu && !this.dropdownMenu.contains(e.target)) {
       this.setState(
         { navMenuOpen: false },
         () => { document.removeEventListener('click', this.closeMenu) }
@@ -70,8 +70,10 @@ class NavMenu extends React.Component {
     : null
 
     return (
-      <div>
-        <UserAvatar />
+      <div className="nav-menu-container">
+        <div>
+          <UserAvatar />
+        </div>
         <div
           className="nav-user"
           onClick={ this.openMenu } >

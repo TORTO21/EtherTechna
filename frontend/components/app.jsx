@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/users/:userId" component={ UserPage } />
         <AuthRoute path="/membership" component={ MembershipPage } />
         <Route path="/stories/new" component={ NewStoryForm } />
-        <Route path="stories/:storyId/edit" component={ EditStoryForm }/>
+        <Route path="/stories/:storyId/edit" component={ EditStoryForm }/>
         <Route path="/stories/:storyId" component={ StoryItem } />
         <Route path="/" component={ MainPage } />
       </Switch>

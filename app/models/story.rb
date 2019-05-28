@@ -14,4 +14,3 @@ class Story < ApplicationRecord
     timeObj.strftime("%b %d") +year
   end
 end
-# Aug 4, 2018

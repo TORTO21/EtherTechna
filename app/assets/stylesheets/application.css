@@ -15,6 +15,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto|Vidaloka&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 main, body, article, section, aside,
 form, div, label, button p, a, ul, li {
