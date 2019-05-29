@@ -65,6 +65,7 @@ export const fetchStory = (storyId) => (dispatch) => {
 }
 
 export const createStory = (story) => (dispatch) => {
+  debugger
   return APIStoryUtil.createStory(story)
     .then(
       (story) => dispatch(receiveStory(story)),

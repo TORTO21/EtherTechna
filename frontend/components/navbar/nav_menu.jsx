@@ -38,7 +38,14 @@ class NavMenu extends React.Component {
       >
         <li>
           <ul className="nav-menu-stories">
-            <li><a href="#">New story</a></li>
+            <li>
+              <Link
+                to="/stories/new"
+                replace
+                className="link" >
+                  New Story
+              </Link>
+            </li>
             <li><a href="#">Stories</a></li>
             <li><a href="#">Series</a></li>
             <li><a href="#">Stats</a></li>

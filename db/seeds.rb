@@ -8,7 +8,9 @@
 
 require 'open-uri'
 
+Story.destroy_all
 User.destroy_all
+
 guest = User.create(username: 'guest', email: 'guest@EtherTechna.com', password: 'password')
 
 user_01 = User.create(username: 'oliver', email: 'oliver@student.com', password: 'password')
@@ -28,7 +30,7 @@ author_1 = User.create(username: 'Harold Speed', email: 'harold@gutenberg.org', 
 author_2 = User.create(username: 'Plato', email: 'plato@gutenberg.org', password: 'password')
 author_3 = User.create(username: 'Napoleon Hill', email: 'napoleon@roblewis.com', password: 'password')
 
-Story.destroy_all
+
 story_1 = Story.create(
   title: 'THE PRACTICE & SCIENCE OF DRAWING',
   lead_in: 'Before you learn to draw, you must learn how to see.',

@@ -4,10 +4,6 @@ import ReactDOM from 'react-dom'
 export class StoryEditor extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      body: "",
-    }
-    this.setContent = this.setContent.bind(this)
     this.link = this.link.bind(this)
     this.copy = this.copy.bind(this)
     this.changeColor = this.changeColor.bind(this)
@@ -15,38 +11,39 @@ export class StoryEditor extends React.Component {
     this.printMe = this.printMe.bind(this)
   }
 
-
-
   componentDidMount() {
-    const btn = document.querySelector(".sai")
-    const getText = document.querySelector(".getText")
-    const content = document.querySelector(".textarea")
-    const editorContent = document.querySelector(".editor")
+    this.btn = document.querySelector(".getHtml")
+    this.getText = document.querySelector(".getText")
+    this.content = document.querySelector(".textarea")
+    this.editorContent = document.querySelector(".editor")
+    this.text = this.editorContent.innerHTML
 
-     btn.addEventListener(
+    this.btn.addEventListener(
       "click",
       () => {
-        const s = editorContent.innerHTML
-        content.style.display = "block"
-        content.textContent = s
+        var s = this.editorContent.innerHTML
+        this.content.style.display = "block"
+        this.content.textContent = s
+        console.log(this.editorContent.innerHTML)
+      }
+    )
+    
+    this.getText.addEventListener(
+      "click",
+      () => {
+        const old = this.editorContent.textContent
+        this.content.style.display = "block"
+        this.content.textContent = old
       }
     )
 
-    getText.addEventListener("click", function() {
-      const old = editorContent.textContent
-      content.style.display = "block"
-      content.textContent = old
-    })
-  }
- 
-  setContent() {
-    debugger
-    () => {
-      const s = editorContent.innerHTML
-      content.style.display = "block"
-      content.textContent = s
-    }
-    this.setState({ body: editorContent.innerHTML })
+    this.editorContent.addEventListener(
+      "keyup",
+      () => {
+        // console.log(this.editorContent.innerHTML)
+        this.props.updateBody(this.editorContent.innerHTML)
+      }
+    )
   }
 
   link() {
@@ -74,7 +71,7 @@ export class StoryEditor extends React.Component {
         dataURI = reader.result
         const img = document.createElement("img")
         img.src = dataURI
-        editorContent.appendChild(img)
+        this.editorContent.appendChild(img)
       },
       false
     )
@@ -89,7 +86,7 @@ export class StoryEditor extends React.Component {
     if (confirm("Check your Content before print")) {
       const body = document.body
       let s = body.innerHTML
-      body.textContent = editorContent.innerHTML
+      body.textContent = this.editorContent.innerHTML
 
       document.execCommandShowHelp
       body.style.whiteSpace = "pre"
@@ -99,9 +96,6 @@ export class StoryEditor extends React.Component {
   }
 
   render() {
-    
-
-
     return (
       <div>
         <div className="toolbar">
@@ -201,12 +195,7 @@ export class StoryEditor extends React.Component {
         </div>
 
         <div className="center">
-          <button
-            className="sai btn" 
-            // onClick={ () => this.setContent() }
-            >
-              GetHtml
-          </button>
+          <button className="getHtml btn">GetHtml</button>
           <button className="getText btn">GetText</button>
           <button
             className="btn print"

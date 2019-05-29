@@ -22,8 +22,8 @@ const App = () => {
       <Switch>
         <Route path="/users/:userId" component={ UserPage } />
         <AuthRoute path="/membership" component={ MembershipPage } />
-        <Route path="/stories/new" component={ NewStoryForm } />
-        <Route path="/stories/:storyId/edit" component={ EditStoryForm }/>
+        <ProtectedRoute path="/stories/new" component={ NewStoryForm } />
+        <ProtectedRoute path="/stories/:storyId/edit" component={ EditStoryForm }/>
         <Route path="/stories/:storyId" component={ StoryItem } />
         <Route path="/" component={ MainPage } />
       </Switch>

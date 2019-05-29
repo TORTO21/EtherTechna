@@ -7,19 +7,24 @@ class StoryForm extends React.Component {
     this.state = this.props.story
     this.update = this.update.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.updateBody = this.updateBody.bind(this)
   }
 
   handleSubmit(e) {
     e.preventDefault()
-    // this.props.submitAction(this.state)
+    this.props.submitAction(this.state)
+    console.log(this.state)
   }
 
   update(field) {
     return e => this.setState({ [field]: e.target.value })
   }
 
+  updateBody(editorContent) {
+    this.setState({ body: editorContent })
+  }
+
   render () {
-    // debugger
     return (
       <div>
         <form onSubmit={ this.handleSubmit } >
@@ -36,7 +41,7 @@ class StoryForm extends React.Component {
               type="text"
               placeholder="Lead In"
               className="story-form-lead-in"
-              onChange={ this.update('lead-in') }
+              onChange={ this.update('lead_in') }
             />
           </label>
           <label>
@@ -47,7 +52,7 @@ class StoryForm extends React.Component {
               onChange={ this.update('category') }
             />
           </label>
-          <StoryEditor />
+          <StoryEditor body={ this.state.body } updateBody={ this.updateBody } />
           <input type="submit" value="Submit"/>
         </form>
         

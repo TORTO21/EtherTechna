@@ -20,6 +20,7 @@ class Api::StoriesController < ApplicationController
   def create
     @story = Story.new(story_params)
     @story.author_id = current_user.id
+    debugger
     if @story.save
       render :show, notice: 'Story successfully created.', status: 201
     else
