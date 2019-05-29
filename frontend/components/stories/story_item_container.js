@@ -4,7 +4,8 @@ import { fetchStory } from '../../actions/story_actions'
 
 const msp = (state, ownProps) => {
   return {
-    story: state.entities.stories[ownProps.match.params.storyId]
+    story: state.entities.stories[ownProps.match.params.storyId],
+    currentUserId: state.session.currentUserId
   }
 }
 

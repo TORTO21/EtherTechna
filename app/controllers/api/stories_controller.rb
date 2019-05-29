@@ -7,7 +7,7 @@ class Api::StoriesController < ApplicationController
       @stories = @user.stories
       render :index
     else
-      @stories = Story.all.includes(:author)
+      @stories = Story.all.includes(:author).includes(image_attachment: :blob)
       render :index
     end
   end
@@ -20,7 +20,6 @@ class Api::StoriesController < ApplicationController
   def create
     @story = Story.new(story_params)
     @story.author_id = current_user.id
-    debugger
     if @story.save
       render :show, notice: 'Story successfully created.', status: 201
     else

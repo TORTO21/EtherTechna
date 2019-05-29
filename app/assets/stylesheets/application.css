@@ -93,3 +93,8 @@ input[type="button"]:visited,
   position: relative;
   top: 0;
 }
+
+#root {
+  max-width: 1072px;
+  margin: 0 auto;
+}

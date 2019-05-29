@@ -11,10 +11,30 @@ export class StoryEditor extends React.Component {
   }
 
   componentDidMount() {
+    this.btn = document.querySelector(".getHtml")
+    this.getText = document.querySelector(".getText")
     this.content = document.querySelector(".textarea")
     this.editorContent = document.querySelector(".editor")
-    // debugger
-    this.editorContent.innerHTML = this.props.body
+    this.text = this.editorContent.innerHTML
+
+    this.btn.addEventListener(
+      "click",
+      () => {
+        var s = this.editorContent.innerHTML
+        this.content.style.display = "block"
+        this.content.textContent = s
+        console.log(this.editorContent.innerHTML)
+      }
+    )
+    
+    this.getText.addEventListener(
+      "click",
+      () => {
+        const old = this.editorContent.textContent
+        this.content.style.display = "block"
+        this.content.textContent = old
+      }
+    )
 
     this.editorContent.addEventListener(
       "keyup",
@@ -163,11 +183,24 @@ export class StoryEditor extends React.Component {
         <div className="center">
           <div
             className="editor"
-            placeholder="Tell your story..."
             contentEditable
             suppressContentEditableWarning
+            // ref={ el => this.editorContent = el }
+            // onChange={ () => this.setContent() }
             >
+              <h1>Simple Html editor</h1>
+              <p>Good to start</p>
           </div>
+        </div>
+
+        <div className="center">
+          <button className="getHtml btn">GetHtml</button>
+          <button className="getText btn">GetText</button>
+          <button
+            className="btn print"
+            onClick={ () => this.printMe() } >
+              PrintHtml
+          </button>
         </div>
 
         <div className="center">

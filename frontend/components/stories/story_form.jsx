@@ -13,7 +13,7 @@ class StoryForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     this.props.submitAction(this.state)
-    console.log(this.state)
+      .then((action) => this.props.history.push(`/stories/${action.story.id}`))
   }
 
   update(field) {
@@ -25,8 +25,13 @@ class StoryForm extends React.Component {
   }
 
   render () {
+    const editorBody = this.props.story
+      ? this.props.story.body
+      : ""
+
+    // debugger
     return (
-      <div>
+      <div className="story-form-container">
         <form onSubmit={ this.handleSubmit } >
           <label>
             <input
@@ -52,8 +57,11 @@ class StoryForm extends React.Component {
               onChange={ this.update('category') }
             />
           </label>
-          <StoryEditor body={ this.state.body } updateBody={ this.updateBody } />
-          <input type="submit" value="Submit"/>
+          <StoryEditor body={ editorBody } updateBody={ this.updateBody } />
+          <input
+            type="submit"
+            value="Ready to Publish?"
+            className="btn-green link-green link" />
         </form>
         
       </div>

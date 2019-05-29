@@ -12,10 +12,19 @@ class StoryItem extends React.Component {
   }
 
   render () {
-    const { story } = this.props
+    const { story, currentUserId } = this.props
     if (!story) return null
     const { title, lead_in, body, author, author_id } = story
     
+    const editStory = currentUserId === author_id
+      ? <Link
+          to={ `/stories/${ story.id }/edit` }
+          replace
+          className="btn-green link-green" >
+            Edit Story
+        </Link>
+      : null
+
     return (
       <div className="story-item-container">
         <Link
@@ -24,7 +33,11 @@ class StoryItem extends React.Component {
             { author }
         </Link>
         <div className="story-title" >{ title }</div>
-        <div className="story-body" >{ body }</div>
+        <div
+          className="story-body"
+          dangerouslySetInnerHTML={ { __html: body } }>
+        </div>
+        { editStory }
       </div>
     )
   }
