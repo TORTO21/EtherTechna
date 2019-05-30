@@ -1,22 +1,13 @@
-// *,*::before,*::after{
-//   box-sizing: border-box;
-//   padding: 0;
-//   margin: 0;
-// }
-
 .fa-file-image-o {
   text-align: center;
-}
-
-html{
-  font-size: 1.1rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 [contenteditable=true]:empty:before {
   content: attr(placeholder);
   display: block; /* For Firefox */
   color: rgba(0, 0, 0, 0.4);
+  font-size: 28px;
+  text-align: left;
 }
 
 // div[contenteditable=true] {
@@ -32,27 +23,16 @@ html{
 // }
 
 .toolbar{
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit,minmax(20px,40px));
-  background-color: rgb(231, 231, 231);
+  // background-color: rgb(231, 231, 231);
+  // border-radius: 5px;
   color: rgb(0, 0, 0);
   grid-gap: 1rem;
-  padding: 1rem;
-  justify-content: center;
+  padding: 1rem 0;
+  justify-content: space-between;
   align-items:center;
-  border-radius: 5px;
 
-  // img{
-  //   width: 60px;
-  //   height: 60px;
-  //   margin-top: .4rem;
-  //   border-radius: 50rem;
-  // }
-  
-  // label {
-  //   margin-left: 0.04rem;
-  //   padding-left:.7rem
-  // }
 }
 
 .tool-items{
@@ -77,15 +57,18 @@ html{
 }
 
 .editor{
-  width:70vw;
-  height: 50vh;
-  margin: 2rem;
-  padding: 1rem;
-  font-size: 1.2rem;
-  box-shadow: 0 .1rem .4rem black;
-  border: 1px solid black;
-  overflow-y: auto;
-  border-radius: 5px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+
+  // height: 50vh;
+  // margin: 2rem;
+  // padding: 1rem;
+  // font-size: 1.2rem;
+  // box-shadow: 0 .1rem .4rem black;
+  // border: 1px solid black;
+  // overflow-y: auto;
+  // border-radius: 5 px;
 }
 
 .textarea{
@@ -106,24 +89,6 @@ html{
    }
 }
 
-.btn{
-  padding: .5rem;
-  background-color: #aaaaaa;
-  margin-right: 1rem;
-  color: #fffffc;
-  letter-spacing: .1rem;
-  font-size: 1rem;
-  border-radius: .2rem;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 .4rem .4rem black;
-  transition: all .3s;
-}
-
-.btn:hover{
-  background-color: #333;
-  box-shadow: 0 .1rem .1rem black;
-}
 
 
 // img{
@@ -136,3 +101,4 @@ html{
 //   margin-left: 0.04rem;
 //   padding-left:.7rem
 // }
+

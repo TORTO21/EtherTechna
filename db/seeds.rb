@@ -41,19 +41,78 @@ user_10 = User.create(username: 'jasmine', email: 'jasmine@student.com', passwor
 user_11 = User.create(username: 'lisa', email: 'lisa@student.com', password: 'password')
 user_12 = User.create(username: 'john-michael', email: 'john-michael@student.com', password: 'password')
 
-User.create(username: 'Harold Speed', email: 'haroldspeed@gutenberg.org', password: 'password')
-User.create(username: 'Plato', email: 'plato@gutenberg.org', password: 'password')
-User.create(username: 'Napoleon Hill', email: 'napoleonhill@roblewis.com', password: 'password')
-User.create(username: 'various', email: 'various@economist.com', password: 'password')
-User.create(username: 'William Thorp', email: 'williamthorp@economist.com', password: 'password')
-User.create(username: 'D T MacDougal', email: 'dtmacdougal@popsci.com', password: 'password')
-User.create(username: 'J De Morgan', email: 'jdemorgan@popsci.com', password: 'password')
-User.create(username: 'Charles Wyllys Elliot', email: 'charleswyllyselliot@theinternational.com', password: 'password')
-User.create(username: 'R H Stoddard', email: 'rhstoddard@theinternational.com', password: 'password')
-User.create(username: 'W H Stiles', email: 'honwhstiles@theinternational.com', password: 'password')
-User.create(username: 'various2', email: 'various@theinternational.com', password: 'password')
-User.create(username: 'William N Brown', email: 'williamnbrown@gutenberg.org', password: 'password')
-
+User.create(
+  username: 'Harold Speed',
+  email: 'haroldspeed@gutenberg.org',
+  password: 'password',
+  description: 'Our moments of peace are, I think, always associated with some form of beauty, of this spark of harmony within corresponding with some infinite source without.'
+) 
+User.create(
+  username: 'Plato',
+  email: 'plato@gutenberg.org',
+  password: 'password',
+  description: 'We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.'
+) 
+User.create(
+  username: 'Napoleon Hill',
+  email: 'napoleonhill@roblewis.com',
+  password: 'password',
+  description: 'Think twice before you speak, because your words and influence will plant the seed of either success or failure in the mind of another.'
+) 
+User.create(
+  username: 'various',
+  email: 'various@economist.com',
+  password: 'password',
+  description: 'who can speak for me?  Perhaps the editor?'
+) 
+User.create(
+  username: 'William Thorp',
+  email: 'williamthorp@economist.com',
+  password: 'password',
+  description: '“An economist is an expert who will know tomorrow why the things he predicted yesterday didn’t happen today.” ― Laurence J. Peter'
+) 
+User.create(
+  username: 'D T MacDougal',
+  email: 'dtmacdougal@popsci.com',
+  password: 'password',
+  description: '“The curious mind embraces science; the gifted and sensitive, the arts; the practical, business; the leftover becomes an economist” ― Nassim Nicholas Taleb,'
+) 
+User.create(
+  username: 'J De Morgan',
+  email: 'jdemorgan@popsci.com',
+  password: 'password',
+  description: '“Science is a way of thinking much more than it is a body of knowledge.” – Carl Sagan'
+) 
+User.create(
+  username: 'Charles Wyllys Elliot',
+  email: 'charleswyllyselliot@theinternational.com',
+  password: 'password',
+  description: '“It is a far, far better thing that I do, than I have ever done; it is a far, far better rest I go to than I have ever known.” — A Tale of Two Cities, Charles Dickens'
+) 
+User.create(
+  username: 'R H Stoddard',
+  email: 'rhstoddard@theinternational.com',
+  password: 'password',
+  description: '“All we have to decide is what to do with the time that is given us.” — The Fellowship of the Ring, J.R.R. Tolkein'
+) 
+User.create(
+  username: 'W H Stiles',
+  email: 'honwhstiles@theinternational.com',
+  password: 'password',
+  description: '“You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You’re on your own. And you know what you know. And YOU are the one who’ll decide where to go…” — Oh, the Places You’ll Go! Dr Seuss'
+) 
+User.create(
+  username: 'various2',
+  email: 'various@theinternational.com',
+  password: 'password',
+  description: '“It matters not what someone is born, but what they grow to be.” — Harry Potter and the Goblet of Fire, J.K. Rowling'
+) 
+User.create(
+  username: 'William N Brown',
+  email: 'williamnbrown@gutenberg.org',
+  password: 'password',
+  description: '“ARMOR, n. The kind of clothing worn by a man whose tailor is a blacksmith.” ― Ambrose Bierce, The Unabridged Devil’s Dictionary'
+)
 
 story_001 = Story.create(
   title: 'THE PRACTICE & SCIENCE OF DRAWING',

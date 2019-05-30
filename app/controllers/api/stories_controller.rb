@@ -30,7 +30,7 @@ class Api::StoriesController < ApplicationController
   def update
     @story = Story.find(params[:id])
     if @story.author_id == current_user.id && @story.update(story_params)
-      render :show, notice: 'Story successfully updated.', status: 302
+      render :show, notice: 'Story successfully updated.', status: 201
     else
       render json: @story.errors.full_messages, status: 422
     end

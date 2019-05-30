@@ -44,6 +44,10 @@ class StoryItem extends React.Component {
     return (
       <div className="story-item-container">
 
+        <div className="story-item-edit">
+          { editStory }
+        </div>
+
         <div className="story-item-image">
           <img src={ image_url } alt={ title } className="story-item-image"/>  
         </div>
@@ -89,7 +93,7 @@ class StoryItem extends React.Component {
           className="story-item-body"
           dangerouslySetInnerHTML={ { __html: body } }>
         </div>
-        { editStory }
+  
       </div>
     )
   }

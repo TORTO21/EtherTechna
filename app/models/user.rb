@@ -18,6 +18,10 @@ class User < ApplicationRecord
 
   # FGRIPE
   
+  def self.to_date(user)
+    user.created_at.strftime("%b %Y")
+  end
+
   def self.find_by_credentials(username, password)
     @user = User.find_by(username: username)
     return nil unless @user

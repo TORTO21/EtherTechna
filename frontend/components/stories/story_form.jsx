@@ -13,7 +13,10 @@ class StoryForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     this.props.submitAction(this.state)
-      .then((action) => this.props.history.push(`/stories/${action.story.id}`))
+      .then((action) => {
+        debugger
+        this.props.history.push(`/stories/${action.story.id}`)
+      })
   }
 
   update(field) {
@@ -29,39 +32,44 @@ class StoryForm extends React.Component {
       ? this.props.story.body
       : ""
 
-    // debugger
+    const { title, lead_in, category, body } = this.state
     return (
       <div className="story-form-container">
-        <form onSubmit={ this.handleSubmit } >
+        <form
+          onSubmit={ this.handleSubmit }
+          className="story-form" >
           <label>
             <input
               type="text"
-              placeholder="Title"
-              className="story-form-title"
+              placeholder=" Title"
+              className="story-form-title story-form-input"
               onChange={ this.update('title') }
+              value={ title }
             />
           </label>
           <label>
             <input
               type="text"
-              placeholder="Lead In"
-              className="story-form-lead-in"
+              placeholder=" Lead In"
+              className="story-form-lead-in story-form-input"
               onChange={ this.update('lead_in') }
+              value={ lead_in }
             />
           </label>
           <label>
             <input
               type="text"
-              placeholder="Category"
-              className="story-form-category"
+              placeholder=" Category"
+              className="story-form-category story-form-input"
               onChange={ this.update('category') }
+              value={ category }
             />
           </label>
           <StoryEditor body={ editorBody } updateBody={ this.updateBody } />
           <input
             type="submit"
             value="Ready to Publish?"
-            className="btn-green link-green link" />
+            className="story-form-submit btn-green link-green link" />
         </form>
         
       </div>

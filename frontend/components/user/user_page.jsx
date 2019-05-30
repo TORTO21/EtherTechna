@@ -23,10 +23,37 @@ class UserPage extends React.Component {
 
     if (!user) return null
 
+    const { username, description, created } = user
+
+
     return (
-      <div>
-        <h1>{ user.username }</h1>
-        <StoryIndexer stories={ stories } />
+      <div className="user-page-container">
+        <div className="user-page">
+          <div className="user-profile">
+            <div className="user-name-container">
+              <div className="user-name">
+                { username }
+              </div>
+
+              <div className="user-follow"></div>
+            </div >
+            <div className="user-description-container">
+              <div className="user-description">
+                { description }
+              </div>
+            </div>
+            <div className="user-since">
+              EtherTechna member since { created }
+            </div>
+            
+          </div>
+
+          <div className="user-latest">
+            Latest
+          </div>
+          
+          <StoryIndexer stories={ stories } />
+        </div>
       </div>
     )
   }

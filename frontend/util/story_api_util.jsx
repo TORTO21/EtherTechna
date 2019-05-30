@@ -20,7 +20,6 @@ export const fetchStory = (storyId) => {
 }
 
 export const createStory = (story) => {
-  debugger
   return $.ajax({
     method: 'POST',
     url: 'api/stories',

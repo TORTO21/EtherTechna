@@ -1,6 +1,7 @@
 .nav-menu-container {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .nav-user {
@@ -9,8 +10,8 @@
 
 .nav-menu-dropdown {
 	position: absolute;
-	top: 100px;
-	right: 0;
+	top: 55px;
+	right: -25px;
 	background-color: #fff;
 	border: 1px solid light-gray;
 	border-radius: 3px;
