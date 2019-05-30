@@ -12,7 +12,7 @@
     flex-direction: column;
   }
     
-  .story-item-container {
+  .story-indexer-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -44,15 +44,7 @@
   }
 }
 
-.story-title {
-  max-height: 84px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 18px;
-  font-weight: 700;
-  margin-top: 10px;
-  // font-family: sans-serif;
-}
+
 
 .story-lead-in {
   font-size: 14px;
@@ -68,6 +60,17 @@
 .story-author {
   margin-top: 10px;
   font-size: 13px;
+  width: fit-content;
+}
+
+.story-date-divider::after{
+  padding: 0 4.5px;
+  content: "・";
+}
+
+.story-star::after{
+  padding-left: 4px;
+  content: "★";
 }
 
 .story-tail {

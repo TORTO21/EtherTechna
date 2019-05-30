@@ -24,8 +24,9 @@ class StoryIndexer extends React.Component {
         created,
         category,
         image_url,
+        read_time,
       } = story
-      return <li key={ id } className="story-item-container" >
+      return <li key={ id } className="story-indexer-container" >
         <div className="links-container">
           <Link
             to={ `/stories/${ id }` }
@@ -47,6 +48,9 @@ class StoryIndexer extends React.Component {
           </div>
           <div className="story-tail row">
             { created }
+            <span className="story-date-divider"></span>
+            { read_time }
+            <span className="story-star"></span>
           </div>
         </div>
         <div className="image-container">

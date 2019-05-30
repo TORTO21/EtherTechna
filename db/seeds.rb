@@ -1469,7 +1469,7 @@ story_010.update(created_at: Time.parse("August 3, 1898, 12:00am UTC +0"))
 
 story_011 = Story.create(
   title: 'CAGLIOSTRO, THE MAGICIAN.',
-  lead_in: 'Know, then, that in the year 1743, in the city of Palermo, the family of Signor Pietro Balsamo, a shopkeeper, were exhilarated by the birth of a boy.',
+  lead_in: 'Under the common tent, the great canopy of life, it would not be fair to prejudge the mind',
   category: 'Biography',
   body: "<p>“Know, then, that in the year 1743, in the city of Palermo, the family
   of Signor Pietro Balsamo, a shopkeeper, were exhilarated by the birth of

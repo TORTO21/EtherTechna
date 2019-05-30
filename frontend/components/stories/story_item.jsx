@@ -11,10 +11,26 @@ class StoryItem extends React.Component {
     this.props.fetchStory(storyId)
   }
 
+  componentDidUpdate(prevProps) {
+    const { storyId } = this.props.match.params
+    if (storyId !== prevProps.match.params.storyId) {
+      this.props.fetchStory(storyId)
+    }
+  }
+
   render () {
     const { story, currentUserId } = this.props
     if (!story) return null
-    const { title, lead_in, body, author, author_id } = story
+    const {
+      title,
+      lead_in,
+      body,
+      author,
+      author_id,
+      image_url,
+      read_time,
+      created
+    } = story
     
     const editStory = currentUserId === author_id
       ? <Link
@@ -27,14 +43,50 @@ class StoryItem extends React.Component {
 
     return (
       <div className="story-item-container">
-        <Link
-          to={ `/users/${ author_id }` }
-          className="story-author link" >
-            { author }
-        </Link>
-        <div className="story-title" >{ title }</div>
+
+        <div className="story-item-image">
+          <img src={ image_url } alt={ title } className="story-item-image"/>  
+        </div>
+        
+        <div className="story-item-header">
+          <div className="story-item-title">
+            { title }
+          </div>
+
+          <div className="story-item-lead-in">
+            { lead_in }
+          </div>
+
+          <div className="story-item-author-info">
+            <div className="story-author-avatar">
+              {/* TBD */}
+            </div>
+
+            <div className="story-item-author-container">
+              <div>
+                <Link
+                  to={ `/users/${ author_id }` }
+                  className="story-author link" >
+                    { author }
+                </Link>
+                {/* <div className="follow-button"> Follow </div> */}
+              </div>
+              
+              <div>
+                <div>
+                  { created }
+                  <span className="story-date-divider"></span>
+                  { read_time }
+                  <span className="story-star"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+         
         <div
-          className="story-body"
+          className="story-item-body"
           dangerouslySetInnerHTML={ { __html: body } }>
         </div>
         { editStory }
