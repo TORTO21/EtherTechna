@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import StoriesIndex from '../stories/stories_index_container'
+import StoriesPopIndex from '../stories/stories_pop_index_container'
 
 class MainPage extends React.Component {
 
@@ -26,18 +27,30 @@ class MainPage extends React.Component {
           <div className="main-suggested">
             <StoriesIndex />
           </div>
-          <sidebar className="main-popular">
-            {/* <PopularIndex /> */}
-          </sidebar>
+
+          <div className="main-popular">
+            <div className="main-pop-title">
+              Popular on EtherTechna
+            </div>
+
+            <div className="main-pop-index-container">
+              <StoriesPopIndex />
+            </div>
+            
+          </div>
         </div>
-        <ul>
+
+        <div className="main-footer">
+          
+        </div>
+        {/* <ul>
           <li>featured stories</li>
           <li>personlized stories (if logged in)</li>
           <li>popular stories</li>
           <li>story index</li>
           <br />
           <br />
-        </ul>
+        </ul> */}
       </div>
     )
   }

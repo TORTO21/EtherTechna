@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
-import StoriesIndex from './stories_index'
+import StoriesPopIndex from './stories_pop_index'
 import { fetchStories } from '../../actions/story_actions'
 
 const msp = (state) => {
   return {
-    stories: Object.values(state.entities.stories).slice(0, 10),
+    stories: Object.values(state.entities.stories).slice(10, 15),
   }
 }
 
@@ -14,4 +14,4 @@ const mdp = (dispatch) => {
   }
 }
 
-export default connect(msp, mdp)(StoriesIndex)
+export default connect(msp, mdp)(StoriesPopIndex)

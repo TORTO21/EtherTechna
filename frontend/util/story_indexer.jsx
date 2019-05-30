@@ -7,12 +7,12 @@ class StoryIndexer extends React.Component {
 
   componentWillUnmount() {
     this.props.clearStories()
-  }
+  }s
 
   render () {
     const { stories } = this.props
 
-    if (!stories) return null
+    if (stories.length === 0) return null
 
     const storyLis = stories.map(story => {
       const { 
@@ -26,6 +26,7 @@ class StoryIndexer extends React.Component {
         image_url,
         read_time,
       } = story
+
       return <li key={ id } className="story-indexer-container" >
         <div className="story-links-container">
           <Link
