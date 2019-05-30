@@ -27,17 +27,19 @@ class StoryIndexer extends React.Component {
         read_time,
       } = story
       return <li key={ id } className="story-indexer-container" >
-        <div className="links-container">
+        <div className="story-links-container">
           <Link
             to={ `/stories/${ id }` }
             className="story-title" >
               { title }
           </Link>
-          <Link
-            to={ `/stories/${ id }` }
-            className="story-lead-in link-gray" >
-              { lead_in }
-          </Link>
+          <div className="story-lead-in-container">
+            <Link
+              to={ `/stories/${ id }` }
+              className="story-lead-in link-gray" >
+                { lead_in }
+            </Link>
+          </div>
           <div className="story-author">
             <Link
               to={ `/users/${ author_id }` }

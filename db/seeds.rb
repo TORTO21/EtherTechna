@@ -344,7 +344,9 @@ story_005.update(created_at: Time.parse("December 1, 2008, 12:00am UTC +0"))
 
 story_006 = Story.create(
   title: 'THE FALLACY OF PROTECTION.',
-  lead_in: 'All laws made for the purpose of protecting the interests of individuals or classes must mean, if they mean anything, to render the articles which such classes deal in or produce dearer than they would otherwise be if the public was left at liberty to supply itself with such commodities in the manner which their own interests and choice would dictate.',
+  lead_in: 'Time was when the Sovereigns of England relied chiefly on the
+  granting of patents to individuals for the exclusive exercise of certain
+  trades or occupations in particular places',
   category: 'Politics',
   body: "<p>All laws made for the purpose of protecting the interests of individuals
   or classes must mean, if they mean anything, to render the

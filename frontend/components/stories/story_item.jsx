@@ -73,7 +73,7 @@ class StoryItem extends React.Component {
               </div>
               
               <div>
-                <div>
+                <div className="story-tail">
                   { created }
                   <span className="story-date-divider"></span>
                   { read_time }

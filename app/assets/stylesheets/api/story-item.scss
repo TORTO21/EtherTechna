@@ -28,17 +28,41 @@ margin: 0 auto;
 
   .story-item-title {
     max-height: 84px;
+    // white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
+    font-family:
+      medium-content-title-font,
+      Georgia,
+      Cambria,
+      "Times New Roman",
+      Times,
+      serif;
+    font-size: 42px;
+  }
+
+  .story-item-lead-in {
+    margin-top: 5px;
+    margin-bottom: 22px;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 28px;
+    font-family:
+      medium-content-sans-serif-font,
+      "Lucida Grande",
+      "Lucida Sans Unicode",
+      "Lucida Sans",
+      Geneva,
+      Arial,
+      sans-serif;
   }
 }
 
 .story-item-author-container {
   width: 100%;
-  height: 20px;
+  height: 50px;
   margin: 24px 0;
 
 }
