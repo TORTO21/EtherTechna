@@ -84,8 +84,8 @@ story_001 = Story.create(
   constructed roughly on the same principle as the human eye.</p>",
   author_id: User.find_by(username: 'Harold Speed').id
 )
-file_001 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/pawel-czerwinski-1612026-unsplash.jpg')
-story_001.image.attach(io: file_001, filename: 'pawel-czerwinski-1612026-unsplash.jpg')
+file_001 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/joyce-mccown-1106610-unsplash.jpg')
+story_001.image.attach(io: file_001, filename: 'joyce-mccown-1106610-unsplash.jpg')
 story_001.update(created_at: Time.parse("August 27, 2008, 12:00am UTC +0"))
 
 
