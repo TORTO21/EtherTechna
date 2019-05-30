@@ -17,8 +17,9 @@ const App = () => {
       <Modal />
       <div className='navbar-container'>
         <NavBar />
+        
       </div>
-      <div className="main-content">
+      <div className="main-container">
       <Switch>
         <Route path="/users/:userId" component={ UserPage } />
         <AuthRoute path="/membership" component={ MembershipPage } />
