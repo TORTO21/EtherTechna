@@ -36,7 +36,7 @@ class StoryIndexer extends React.Component {
       : <img
           src={ window.logo }
           alt="EtherTechna"
-          className="story-item-image"
+          className="story-image"
         />
 
       return <li key={ id } className="story-indexer-container" >
