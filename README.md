@@ -1,4 +1,4 @@
-# [EtherTechna](https://ethertechna.herokuapp.com/)
+# **[EtherTechna](https://ethertechna.herokuapp.com/)**
 
 
 It was once believed in the scientific community that the "Ether" existed as a medium connecting all objective mass in the universe, derived from the Greek god of divine air—Aether.  "Techna," also Greek in origin, refers to a skill, trade, art, or device of means.  'EtherTechna' then strives to connect artists, crafters, and ideas as a collaborative hub, sharing information and understanding.
@@ -9,5 +9,15 @@ For further feedback, readers can also leave constructive 'responses' for an aut
 
 Live Site: [EtherTechna](https://ethertechna.herokuapp.com/)
 
-***
 
+
+
+
+# **Tech Basis**
+
+<img src="./src/common/images/5a358a828a88b4.8411539615134583065674.png" width="50" height="50"/>
+<img src="./src/common/images/kissclipart-ruby-on-rails-logo-transparent-clipart-ruby-on-rai-f272d849509c5dbb.png" width="50" height="50"/>
+<img src="./src/common/images/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575c096e1.8015139215266584217889.png" width="50" height="50"/>
+<img src="./src/common/images/kisspng-redux-react-javascript-vue-js-single-page-applicat-5af5cde424ee15.8061979615260584681513.png" width="50" height="50"/>
+
+Crated with Ruby on Rails, React, and Redux, this single page app strives to create a seemless, user-centric experience where content is easy to produce, update, and beautify.  
