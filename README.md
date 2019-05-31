@@ -26,4 +26,3 @@ Crated with Ruby on Rails, React, and Redux, this single page app strives to cre
 
 
 
-One of the tools 
