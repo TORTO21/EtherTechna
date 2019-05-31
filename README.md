@@ -7,5 +7,7 @@ EtherTechna launches into Social Journalism where every member is an author, con
 
 For further feedback, readers can also leave constructive 'responses' for an author.  This messaging element creates the *social* aspect of the site, encouraging interaction between authors and readers on a more coloquial level.
 
+Live Site: [EtherTechna](https://ethertechna.herokuapp.com/)
+
 ***
 
