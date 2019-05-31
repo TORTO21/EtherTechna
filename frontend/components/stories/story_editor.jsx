@@ -13,7 +13,6 @@ export class StoryEditor extends React.Component {
   componentDidMount() {
     this.content = document.querySelector(".textarea")
     this.editorContent = document.querySelector(".editor")
-    // debugger
     this.editorContent.innerHTML = this.props.body
 
     this.editorContent.addEventListener(

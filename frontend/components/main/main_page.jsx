@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import StoriesFeatIndex from '../stories/stories_feat_index_container'
 import StoriesIndex from '../stories/stories_index_container'
 import StoriesPopIndex from '../stories/stories_pop_index_container'
 
@@ -10,8 +11,9 @@ class MainPage extends React.Component {
       <div>
         <div className="main-featured-container">
           <div className="main-featured">
-
+            <StoriesFeatIndex />
           </div>
+
           <div className="main-featured-break-link">
             <a
               href="#"

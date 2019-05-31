@@ -16,6 +16,7 @@ margin: 0 auto;
   max-height: 400px;
   width: 100%;
   object-fit: cover;
+  object-position: 50% 35%;
 }
 
 .story-item-header {
@@ -31,8 +32,9 @@ margin: 0 auto;
     // white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 37px;
+    vertical-align: text-top;
     margin-top: 10px;
     font-family:
       medium-content-title-font,
@@ -41,7 +43,6 @@ margin: 0 auto;
       "Times New Roman",
       Times,
       serif;
-    font-size: 38px;
   }
 
   .story-item-lead-in {

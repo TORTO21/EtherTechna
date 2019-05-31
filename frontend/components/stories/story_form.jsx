@@ -13,10 +13,7 @@ class StoryForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     this.props.submitAction(this.state)
-      .then((action) => {
-        debugger
-        this.props.history.push(`/stories/${action.story.id}`)
-      })
+      .then((action) => this.props.history.push(`/stories/${action.story.id}`))
   }
 
   update(field) {

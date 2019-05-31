@@ -9,7 +9,7 @@
 require 'open-uri'
 
 # TEMPLATE
-# story_011 = Story.create(
+# story_02_ = Story.create(
 #   title: '',
 #   lead_in: '',
 #   category: '',
@@ -17,9 +17,11 @@ require 'open-uri'
 #   ",
 #   author_id: User.find_by(username: '').id
 # )
-# file_011 = open('')
-# story_011.image.attach(io: file_011, filename: '')
-# story_011.update(created_at: Time.parse(", 12:00am UTC +0"))
+# file_02_ = open('')
+# story_02_.image.attach(io: file_02_, filename: '')
+# story_02_.update(created_at: Time.parse(", 12:00am UTC +0"))
+
+
 
 
 
@@ -113,6 +115,13 @@ User.create(
   password: 'password',
   description: '“ARMOR, n. The kind of clothing worn by a man whose tailor is a blacksmith.” ― Ambrose Bierce, The Unabridged Devil’s Dictionary'
 )
+User.create(
+  username: 'Brandpoint',
+  email: 'bpt@brandpointcontent.com',
+  password: 'password',
+  description: 'Since 1996, Brandpoint has been providing high-quality content to editors, ad directors, designers, publishers and bloggers. Whether you have a print publication or are working digitally, Brandpoint’s mission is to make your job easy.'
+)
+
 
 story_001 = Story.create(
   title: 'THE PRACTICE & SCIENCE OF DRAWING',
@@ -140,7 +149,120 @@ story_001 = Story.create(
   produces a picture of whatever is before the eye, such as can be
   seen on the ground glass at the back of a photographer’s camera,
   or on the table of a camera obscura, both of which instruments are
-  constructed roughly on the same principle as the human eye.</p>",
+  constructed roughly on the same principle as the human eye.</p>
+  <p>These rays of light when reflected from an object, and again
+  when passing through the atmosphere, undergo certain modifications.
+  Should the object be a red one, the yellow, green, and blue rays,
+  all, in fact, except the red rays, are absorbed by the object,
+  while the red is allowed to escape. These red rays striking the
+  retina produce certain effects which convey to our consciousness
+  the sensation of red, and we say ”That is a red object.” But there
+  may be particles of moisture or dust in the air that will modify
+  the red rays so that by the time they reach the eye they may be
+  somewhat different. This modification is naturally most effective
+  when a large amount of atmosphere has to be passed through, and in
+  things very distant the colour of the natural object is often
+  entirely lost, to be replaced by atmospheric colours, as we see in
+  distant mountains when the air is not perfectly clear. But we must
+  not stray into the fascinating province of colour.</p>
+  <p>What chiefly concerns us here is the fact that the pictures on
+  our retinas are flat, of two dimensions, the same as the canvas on
+  which we paint. If you examine these visual pictures without any
+  prejudice, as one may with a camera obscura, you will see that they
+  are composed of masses of colour in infinite variety and
+  complexity, of different shapes and gradations, and with many
+  varieties of edges; giving to the eye the illusion of nature with
+  actual depths and distances, although one knows all the time that
+  it is a flat table on which one is looking.</p>
+  <p>Seeing then that our eyes have only flat pictures containing
+  two-dimension information about the objective world, from
+  whence is this knowledge of distance and the solidity of things?
+  How do we <i>see</i> the third dimension, the depth and thickness,
+  by means of flat pictures of two dimensions?</p>
+  <p>The power to judge distance is due principally to our possessing
+  two eyes situated in slightly different positions, from which we
+  get two views of objects, and also to the power possessed by the
+  eyes of focussing at different distances, others being out of focus
+  for the time being. In a picture the eyes can only focus at one
+  distance (the distance the eye is from the plane of the picture
+  when you are looking at it), and this is one of the chief causes of
+  the perennial difficulty in painting backgrounds. In nature they
+  are out of focus when one is looking at an object, but in a
+  painting the background is necessarily on the same focal plane as
+  the object. Numerous are the devices resorted to by painters to
+  overcome this difficulty, but they do not concern us here.</p>
+  <p>The fact that we have two flat pictures on our two retinas to
+  help us, and that we can focus at different planes, would not
+  suffice to account for our knowledge of the solidity and shape of
+  the objective world, were these senses not associated with another
+  sense all important in ideas of form, <b>the sense of
+  touch</b>.</p>
+  <p>This sense is very highly developed in us, and the earlier
+  period of our existence is largely given over to feeling for the
+  objective world outside ourselves. Who has not watched the little
+  baby hands feeling for everything within reach, and without its
+  reach, for the matter of that; for the infant has no knowledge yet
+  of what is and what is not within its reach. Who has not offered
+  some bright object to a young child and
+  watched its clumsy attempts to feel for it, almost as clumsy at
+  first as if it were blind, as it has not yet learned to focus
+  distances. And when he has at last got hold of it, how eagerly he
+  feels it all over, looking intently at it all the time; thus
+  learning early to associate the ”feel of an object” with its
+  appearance. In this way by degrees he acquires those ideas of
+  roughness and smoothness, hardness and softness, solidity, &amp;c.,
+  which later on he will be able to distinguish by vision alone, and
+  without touching the object.</p>
+  <p>Our survival depends so much on this sense of touch, that it is
+  of the first importance to us. We must know whether the ground is
+  hard enough for us to walk on, or whether there is a hole in front
+  of us; and masses of colour rays striking the retina, which is what
+  vision amounts to, will not of themselves tell us. But associated
+  with the knowledge accumulated in our early years, by connecting
+  touch with sight, we do know when certain combinations of colour
+  rays strike the eye that there is a road for us to walk on, and
+  that when certain other combinations occur there is a hole in front
+  of us, or the edge of a precipice.</p>
+  <p>And likewise with hardness and softness, the child who strikes
+  his head against the bed-post is forcibly reminded by nature that
+  such things are to be avoided, and feeling that it is hard and that
+  hardness has a certain look, it avoids that kind of thing in the
+  future. And when it strikes its head against the pillow, it learns
+  the nature of softness, and associating this sensation with the
+  appearance of the pillow, knows in future that when softness is
+  observed it need not be avoided as hardness must be.</p>
+  <p>Sight is therefore not a matter of the eye
+  alone. A whole train of associations connected with the objective
+  world is set going in the mind when rays of light strike the retina
+  refracted from objects. And these associations vary enormously in
+  quantity and value with different individuals; but the one we are
+  here chiefly concerned with is this universal one of touch.
+  Everybody ”sees” the shape of an object, and ”sees” whether it
+  ”looks” hard or soft, &amp;c. Sees, in other words, the ”feel” of
+  it.</p>
+  <p>If you are asked to think of an object, say a cone, it will not,
+  I think, be the visual aspect that will occur to most people. They
+  will think of a circular base from which a continuous side slopes
+  up to a point situated above its centre, as one would feel it. The
+  fact that in almost every visual aspect the base line is that of an
+  ellipse, not a circle, comes as a surprise to people unaccustomed
+  to drawing.</p>
+  <p>But above these cruder instances, what a wealth of associations
+  crowd in upon the mind, when a sight that moves one is observed.
+  Put two men before a scene, one an ordinary person and the other a
+  great poet, and ask them to describe what they see. Assuming them
+  both to be possessed of a reasonable power honestly to express
+  themselves, what a difference would there be in the value of their
+  descriptions. Or take two painters both equally gifted in the power
+  of expressing their visual perceptions, and put them before the
+  scene to paint it. And assuming one to be a commonplace man and the
+  other a great artist, what a difference will there be in their
+  work. The commonplace painter will paint a commonplace picture,
+  while the form and colour will be the means of stirring deep
+  associations and feelings in the mind of the other, and will
+  move him to paint the scene so that the same splendour of
+  associations may be conveyed to the beholder.</p>
+  ",
   author_id: User.find_by(username: 'Harold Speed').id
 )
 file_001 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/joyce-mccown-1106610-unsplash.jpg')
@@ -153,56 +275,469 @@ story_002 = Story.create(
   lead_in: 'Polemarchus, the unbending',
   category: 'Philosophy',
   body: "<p>
-  I went down yesterday to the Piraeus with Glaucon the son of Ariston, that
-  I might offer up my prayers to the goddess (Bendis, the Thracian
-  Artemis.); and also because I wanted to see in what manner they would
-  celebrate the festival, which was a new thing. I was delighted with the
-  procession of the inhabitants; but that of the Thracians was equally, if
-  not more, beautiful. When we had finished our prayers and viewed the
-  spectacle, we turned in the direction of the city; and at that instant
-  Polemarchus the son of Cephalus chanced to catch sight of us from a
-  distance as we were starting on our way home, and told his servant to run
-  and bid us wait for him. The servant took hold of me by the cloak behind,
-  and said: Polemarchus desires you to wait.
-</p>
-<p>
-  I turned round, and asked him where his master was.
-</p>
-<p>
-  There he is, said the youth, coming after you, if you will only wait.
-</p>
-<p>
-  Certainly we will, said Glaucon; and in a few minutes Polemarchus
-  appeared, and with him Adeimantus, Glaucon’s brother, Niceratus the son of
-  Nicias, and several others who had been at the procession.
-</p>
-<p>
-  Polemarchus said to me: I perceive, Socrates, that you and your companion
-  are already on your way to the city.
-</p>
-<p>
-  You are not far wrong, I said.
-</p>
-<p>
-  But do you see, he rejoined, how many we are?
-</p>
-<p>
-  Of course.
-</p>
-<p>
-  And are you stronger than all these? for if not, you will have to remain
-  where you are.
-</p>
-<p>
-  May there not be the alternative, I said, that we may persuade you to let
-  us go?
-</p>
-<p>
-  But can you persuade us, if we refuse to listen to you? he said.
-</p>
-<p>
-  Certainly not, replied Glaucon.
-</p>",
+    I went down yesterday to the Piraeus with Glaucon the son of Ariston, that
+    I might offer up my prayers to the goddess (Bendis, the Thracian
+    Artemis.); and also because I wanted to see in what manner they would
+    celebrate the festival, which was a new thing. I was delighted with the
+    procession of the inhabitants; but that of the Thracians was equally, if
+    not more, beautiful. When we had finished our prayers and viewed the
+    spectacle, we turned in the direction of the city; and at that instant
+    Polemarchus the son of Cephalus chanced to catch sight of us from a
+    distance as we were starting on our way home, and told his servant to run
+    and bid us wait for him. The servant took hold of me by the cloak behind,
+    and said: Polemarchus desires you to wait.
+  </p>
+  <p>
+    I turned round, and asked him where his master was.
+  </p>
+  <p>
+    There he is, said the youth, coming after you, if you will only wait.
+  </p>
+  <p>
+    Certainly we will, said Glaucon; and in a few minutes Polemarchus
+    appeared, and with him Adeimantus, Glaucon’s brother, Niceratus the son of
+    Nicias, and several others who had been at the procession.
+  </p>
+  <p>
+    Polemarchus said to me: I perceive, Socrates, that you and your companion
+    are already on your way to the city.
+  </p>
+  <p>
+    You are not far wrong, I said.
+  </p>
+  <p>
+    But do you see, he rejoined, how many we are?
+  </p>
+  <p>
+    Of course.
+  </p>
+  <p>
+    And are you stronger than all these? for if not, you will have to remain
+    where you are.
+  </p>
+  <p>
+    May there not be the alternative, I said, that we may persuade you to let
+    us go?
+  </p>
+  <p>
+    But can you persuade us, if we refuse to listen to you? he said.
+  </p>
+  <p>
+    Certainly not, replied Glaucon.
+  </p>
+  <p>
+    Then we are not going to listen; of that you may be assured.
+  </p>
+  <p>
+    Adeimantus added: Has no one told you of the torch-race on horseback in
+    honour of the goddess which will take place in the evening?
+  </p>
+  <p>
+    With horses! I replied: That is a novelty. Will horsemen carry torches and
+    pass them one to another during the race?
+  </p>
+  <p>
+    Yes, said Polemarchus, and not only so, but a festival will be celebrated
+    at night, which you certainly ought to see. Let us rise soon after supper
+    and see this festival; there will be a gathering of young men, and we will
+    have a good talk. Stay then, and do not be perverse.
+  </p>
+  <p>
+    Glaucon said: I suppose, since you insist, that we must.
+  </p>
+  <p>
+    Very good, I replied.
+  </p>
+  <p>
+    Accordingly we went with Polemarchus to his house; and there we found his
+    brothers Lysias and Euthydemus, and with them Thrasymachus the
+    Chalcedonian, Charmantides the Paeanian, and Cleitophon the son of
+    Aristonymus. There too was Cephalus the father of Polemarchus, whom I had
+    not seen for a long time, and I thought him very much aged. He was seated
+    on a cushioned chair, and had a garland on his head, for he had been
+    sacrificing in the court; and there were some other chairs in the room
+    arranged in a semicircle, upon which we sat down by him. He saluted me
+    eagerly, and then he said:—
+  </p>
+  <p>
+    You don’t come to see me, Socrates, as often as you ought: If I were still
+    able to go and see you I would not ask you to come to me. But at my age I
+    can hardly get to the city, and therefore you should come oftener to the
+    Piraeus. For let me tell you, that the more the pleasures of the body fade
+    away, the greater to me is the pleasure and charm of conversation. Do not
+    then deny my request, but make our house your resort and keep company with
+    these young men; we are old friends, and you will be quite at home with
+    us.
+  </p>
+  <p>
+    I replied: There is nothing which for my part I like better, Cephalus,
+    than conversing with aged men; for I regard them as travellers who have
+    gone a journey which I too may have to go, and of whom I ought to enquire,
+    whether the way is smooth and easy, or rugged and difficult. And this is a
+    question which I should like to ask of you who have arrived at that time
+    which the poets call the ’threshold of old age’—Is life harder
+    towards the end, or what report do you give of it?
+  </p>
+  <p>
+    I will tell you, Socrates, he said, what my own feeling is. Men of my age
+    flock together; we are birds of a feather, as the old proverb says; and at
+    our meetings the tale of my acquaintance commonly is—I cannot eat, I
+    cannot drink; the pleasures of youth and love are fled away: there was a
+    good time once, but now that is gone, and life is no longer life. Some
+    complain of the slights which are put upon them by relations, and they
+    will tell you sadly of how many evils their old age is the cause. But to
+    me, Socrates, these complainers seem to blame that which is not really in
+    fault. For if old age were the cause, I too being old, and every other old
+    man, would have felt as they do. But this is not my own experience, nor
+    that of others whom I have known. How well I remember the aged poet
+    Sophocles, when in answer to the question, How does love suit with age,
+    Sophocles,—are you still the man you were? Peace, he replied; most
+    gladly have I escaped the thing of which you speak; I feel as if I had
+    escaped from a mad and furious master. His words have often occurred to my
+    mind since, and they seem as good to me now as at the time when he uttered
+    them. For certainly old age has a great sense of calm and freedom; when
+    the passions relax their hold, then, as Sophocles says, we are freed from
+    the grasp not of one mad master only, but of many. The truth is, Socrates,
+    that these regrets, and also the complaints about relations, are to be
+    attributed to the same cause, which is not old age, but men’s characters
+    and tempers; for he who is of a calm and happy nature will hardly feel the
+    pressure of age, but to him who is of an opposite disposition youth and
+    age are equally a burden.
+  </p>
+  <p>
+    I listened in admiration, and wanting to draw him out, that he might go on—Yes,
+    Cephalus, I said: but I rather suspect that people in general are not
+    convinced by you when you speak thus; they think that old age sits lightly
+    upon you, not because of your happy disposition, but because you are rich,
+    and wealth is well known to be a great comforter.
+  </p>
+  <p>
+    You are right, he replied; they are not convinced: and there is something
+    in what they say; not, however, so much as they imagine. I might answer
+    them as Themistocles answered the Seriphian who was abusing him and saying
+    that he was famous, not for his own merits but because he was an Athenian:
+    ’If you had been a native of my country or I of yours, neither of us would
+    have been famous.’ And to those who are not rich and are impatient of old
+    age, the same reply may be made; for to the good poor man old age cannot
+    be a light burden, nor can a bad rich man ever have peace with himself.
+  </p>
+  <p>
+    May I ask, Cephalus, whether your fortune was for the most part inherited
+    or acquired by you?
+  </p>
+  <p>
+    Acquired! Socrates; do you want to know how much I acquired? In the art of
+    making money I have been midway between my father and grandfather: for my
+    grandfather, whose name I bear, doubled and trebled the value of his
+    patrimony, that which he inherited being much what I possess now; but my
+    father Lysanias reduced the property below what it is at present: and I
+    shall be satisfied if I leave to these my sons not less but a little more
+    than I received.
+  </p>
+  <p>
+    That was why I asked you the question, I replied, because I see that you
+    are indifferent about money, which is a characteristic rather of those who
+    have inherited their fortunes than of those who have acquired them; the
+    makers of fortunes have a second love of money as a creation of their own,
+    resembling the affection of authors for their own poems, or of parents for
+    their children, besides that natural love of it for the sake of use and
+    profit which is common to them and all men. And hence they are very bad
+    company, for they can talk about nothing but the praises of wealth.
+  </p>
+  <p>
+    That is true, he said.
+  </p>
+  <p>
+    Yes, that is very true, but may I ask another question?—What do you
+    consider to be the greatest blessing which you have reaped from your
+    wealth?
+  </p>
+  <p>
+    One, he said, of which I could not expect easily to convince others. For
+    let me tell you, Socrates, that when a man thinks himself to be near
+    death, fears and cares enter into his mind which he never had before; the
+    tales of a world below and the punishment which is exacted there of deeds
+    done here were once a laughing matter to him, but now he is tormented with
+    the thought that they may be true: either from the weakness of age, or
+    because he is now drawing nearer to that other place, he has a clearer
+    view of these things; suspicions and alarms crowd thickly upon him, and he
+    begins to reflect and consider what wrongs he has done to others. And when
+    he finds that the sum of his transgressions is great he will many a time
+    like a child start up in his sleep for fear, and he is filled with dark
+    forebodings. But to him who is conscious of no sin, sweet hope, as Pindar
+    charmingly says, is the kind nurse of his age:
+  </p>
+  <p>
+    ’Hope,’ he says, ’cherishes the soul of him who lives in justice and
+    holiness, and is the nurse of his age and the companion of his journey;—hope
+    which is mightiest to sway the restless soul of man.’
+  </p>
+  <p>
+    How admirable are his words! And the great blessing of riches, I do not
+    say to every man, but to a good man, is, that he has had no occasion to
+    deceive or to defraud others, either intentionally or unintentionally; and
+    when he departs to the world below he is not in any apprehension about
+    offerings due to the gods or debts which he owes to men. Now to this peace
+    of mind the possession of wealth greatly contributes; and therefore I say,
+    that, setting one thing against another, of the many advantages which
+    wealth has to give, to a man of sense this is in my opinion the greatest.
+  </p>
+  <p>
+    Well said, Cephalus, I replied; but as concerning justice, what is it?—to
+    speak the truth and to pay your debts—no more than this? And even to
+    this are there not exceptions? Suppose that a friend when in his right
+    mind has deposited arms with me and he asks for them when he is not in his
+    right mind, ought I to give them back to him? No one would say that I
+    ought or that I should be right in doing so, any more than they would say
+    that I ought always to speak the truth to one who is in his condition.
+  </p>
+  <p>
+    You are quite right, he replied.
+  </p>
+  <p>
+    But then, I said, speaking the truth and paying your debts is not a
+    correct definition of justice.
+  </p>
+  <p>
+    Quite correct, Socrates, if Simonides is to be believed, said Polemarchus
+    interposing.
+  </p>
+  <p>
+    I fear, said Cephalus, that I must go now, for I have to look after the
+    sacrifices, and I hand over the argument to Polemarchus and the company.
+  </p>
+  <p>
+    Is not Polemarchus your heir? I said.
+  </p>
+  <p>
+    To be sure, he answered, and went away laughing to the sacrifices.
+  </p>
+  <p>
+    Tell me then, O thou heir of the argument, what did Simonides say, and
+    according to you truly say, about justice?
+  </p>
+  <p>
+    He said that the repayment of a debt is just, and in saying so he appears
+    to me to be right.
+  </p>
+  <p>
+    I should be sorry to doubt the word of such a wise and inspired man, but
+    his meaning, though probably clear to you, is the reverse of clear to me.
+    For he certainly does not mean, as we were just now saying, that I ought
+    to return a deposit of arms or of anything else to one who asks for it
+    when he is not in his right senses; and yet a deposit cannot be denied to
+    be a debt.
+  </p>
+  <p>
+    True.
+  </p>
+  <p>
+    Then we are not going to listen; of that you may be assured.
+  </p>
+  <p>
+    Adeimantus added: Has no one told you of the torch-race on horseback in
+    honour of the goddess which will take place in the evening?
+  </p>
+  <p>
+    With horses! I replied: That is a novelty. Will horsemen carry torches and
+    pass them one to another during the race?
+  </p>
+  <p>
+    Yes, said Polemarchus, and not only so, but a festival will be celebrated
+    at night, which you certainly ought to see. Let us rise soon after supper
+    and see this festival; there will be a gathering of young men, and we will
+    have a good talk. Stay then, and do not be perverse.
+  </p>
+  <p>
+    Glaucon said: I suppose, since you insist, that we must.
+  </p>
+  <p>
+    Very good, I replied.
+  </p>
+  <p>
+    Accordingly we went with Polemarchus to his house; and there we found his
+    brothers Lysias and Euthydemus, and with them Thrasymachus the
+    Chalcedonian, Charmantides the Paeanian, and Cleitophon the son of
+    Aristonymus. There too was Cephalus the father of Polemarchus, whom I had
+    not seen for a long time, and I thought him very much aged. He was seated
+    on a cushioned chair, and had a garland on his head, for he had been
+    sacrificing in the court; and there were some other chairs in the room
+    arranged in a semicircle, upon which we sat down by him. He saluted me
+    eagerly, and then he said:—
+  </p>
+  <p>
+    You don’t come to see me, Socrates, as often as you ought: If I were still
+    able to go and see you I would not ask you to come to me. But at my age I
+    can hardly get to the city, and therefore you should come oftener to the
+    Piraeus. For let me tell you, that the more the pleasures of the body fade
+    away, the greater to me is the pleasure and charm of conversation. Do not
+    then deny my request, but make our house your resort and keep company with
+    these young men; we are old friends, and you will be quite at home with
+    us.
+  </p>
+  <p>
+    I replied: There is nothing which for my part I like better, Cephalus,
+    than conversing with aged men; for I regard them as travellers who have
+    gone a journey which I too may have to go, and of whom I ought to enquire,
+    whether the way is smooth and easy, or rugged and difficult. And this is a
+    question which I should like to ask of you who have arrived at that time
+    which the poets call the ’threshold of old age’—Is life harder
+    towards the end, or what report do you give of it?
+  </p>
+  <p>
+    I will tell you, Socrates, he said, what my own feeling is. Men of my age
+    flock together; we are birds of a feather, as the old proverb says; and at
+    our meetings the tale of my acquaintance commonly is—I cannot eat, I
+    cannot drink; the pleasures of youth and love are fled away: there was a
+    good time once, but now that is gone, and life is no longer life. Some
+    complain of the slights which are put upon them by relations, and they
+    will tell you sadly of how many evils their old age is the cause. But to
+    me, Socrates, these complainers seem to blame that which is not really in
+    fault. For if old age were the cause, I too being old, and every other old
+    man, would have felt as they do. But this is not my own experience, nor
+    that of others whom I have known. How well I remember the aged poet
+    Sophocles, when in answer to the question, How does love suit with age,
+    Sophocles,—are you still the man you were? Peace, he replied; most
+    gladly have I escaped the thing of which you speak; I feel as if I had
+    escaped from a mad and furious master. His words have often occurred to my
+    mind since, and they seem as good to me now as at the time when he uttered
+    them. For certainly old age has a great sense of calm and freedom; when
+    the passions relax their hold, then, as Sophocles says, we are freed from
+    the grasp not of one mad master only, but of many. The truth is, Socrates,
+    that these regrets, and also the complaints about relations, are to be
+    attributed to the same cause, which is not old age, but men’s characters
+    and tempers; for he who is of a calm and happy nature will hardly feel the
+    pressure of age, but to him who is of an opposite disposition youth and
+    age are equally a burden.
+  </p>
+  <p>
+    I listened in admiration, and wanting to draw him out, that he might go on—Yes,
+    Cephalus, I said: but I rather suspect that people in general are not
+    convinced by you when you speak thus; they think that old age sits lightly
+    upon you, not because of your happy disposition, but because you are rich,
+    and wealth is well known to be a great comforter.
+  </p>
+  <p>
+    You are right, he replied; they are not convinced: and there is something
+    in what they say; not, however, so much as they imagine. I might answer
+    them as Themistocles answered the Seriphian who was abusing him and saying
+    that he was famous, not for his own merits but because he was an Athenian:
+    ’If you had been a native of my country or I of yours, neither of us would
+    have been famous.’ And to those who are not rich and are impatient of old
+    age, the same reply may be made; for to the good poor man old age cannot
+    be a light burden, nor can a bad rich man ever have peace with himself.
+  </p>
+  <p>
+    May I ask, Cephalus, whether your fortune was for the most part inherited
+    or acquired by you?
+  </p>
+  <p>
+    Acquired! Socrates; do you want to know how much I acquired? In the art of
+    making money I have been midway between my father and grandfather: for my
+    grandfather, whose name I bear, doubled and trebled the value of his
+    patrimony, that which he inherited being much what I possess now; but my
+    father Lysanias reduced the property below what it is at present: and I
+    shall be satisfied if I leave to these my sons not less but a little more
+    than I received.
+  </p>
+  <p>
+    That was why I asked you the question, I replied, because I see that you
+    are indifferent about money, which is a characteristic rather of those who
+    have inherited their fortunes than of those who have acquired them; the
+    makers of fortunes have a second love of money as a creation of their own,
+    resembling the affection of authors for their own poems, or of parents for
+    their children, besides that natural love of it for the sake of use and
+    profit which is common to them and all men. And hence they are very bad
+    company, for they can talk about nothing but the praises of wealth.
+  </p>
+  <p>
+    That is true, he said.
+  </p>
+  <p>
+    Yes, that is very true, but may I ask another question?—What do you
+    consider to be the greatest blessing which you have reaped from your
+    wealth?
+  </p>
+  <p>
+    One, he said, of which I could not expect easily to convince others. For
+    let me tell you, Socrates, that when a man thinks himself to be near
+    death, fears and cares enter into his mind which he never had before; the
+    tales of a world below and the punishment which is exacted there of deeds
+    done here were once a laughing matter to him, but now he is tormented with
+    the thought that they may be true: either from the weakness of age, or
+    because he is now drawing nearer to that other place, he has a clearer
+    view of these things; suspicions and alarms crowd thickly upon him, and he
+    begins to reflect and consider what wrongs he has done to others. And when
+    he finds that the sum of his transgressions is great he will many a time
+    like a child start up in his sleep for fear, and he is filled with dark
+    forebodings. But to him who is conscious of no sin, sweet hope, as Pindar
+    charmingly says, is the kind nurse of his age:
+  </p>
+  <p>
+    ’Hope,’ he says, ’cherishes the soul of him who lives in justice and
+    holiness, and is the nurse of his age and the companion of his journey;—hope
+    which is mightiest to sway the restless soul of man.’
+  </p>
+  <p>
+    How admirable are his words! And the great blessing of riches, I do not
+    say to every man, but to a good man, is, that he has had no occasion to
+    deceive or to defraud others, either intentionally or unintentionally; and
+    when he departs to the world below he is not in any apprehension about
+    offerings due to the gods or debts which he owes to men. Now to this peace
+    of mind the possession of wealth greatly contributes; and therefore I say,
+    that, setting one thing against another, of the many advantages which
+    wealth has to give, to a man of sense this is in my opinion the greatest.
+  </p>
+  <p>
+    Well said, Cephalus, I replied; but as concerning justice, what is it?—to
+    speak the truth and to pay your debts—no more than this? And even to
+    this are there not exceptions? Suppose that a friend when in his right
+    mind has deposited arms with me and he asks for them when he is not in his
+    right mind, ought I to give them back to him? No one would say that I
+    ought or that I should be right in doing so, any more than they would say
+    that I ought always to speak the truth to one who is in his condition.
+  </p>
+  <p>
+    You are quite right, he replied.
+  </p>
+  <p>
+    But then, I said, speaking the truth and paying your debts is not a
+    correct definition of justice.
+  </p>
+  <p>
+    Quite correct, Socrates, if Simonides is to be believed, said Polemarchus
+    interposing.
+  </p>
+  <p>
+    I fear, said Cephalus, that I must go now, for I have to look after the
+    sacrifices, and I hand over the argument to Polemarchus and the company.
+  </p>
+  <p>
+    Is not Polemarchus your heir? I said.
+  </p>
+  <p>
+    To be sure, he answered, and went away laughing to the sacrifices.
+  </p>
+  <p>
+    Tell me then, O thou heir of the argument, what did Simonides say, and
+    according to you truly say, about justice?
+  </p>
+  <p>
+    He said that the repayment of a debt is just, and in saying so he appears
+    to me to be right.
+  </p>
+  <p>
+    I should be sorry to doubt the word of such a wise and inspired man, but
+    his meaning, though probably clear to you, is the reverse of clear to me.
+    For he certainly does not mean, as we were just now saying, that I ought
+    to return a deposit of arms or of anything else to one who asks for it
+    when he is not in his right senses; and yet a deposit cannot be denied to
+    be a debt.
+  </p>
+  <p>
+    True.
+  </p>
+  ",
   author_id: User.find_by(username: 'Plato').id
 )
 file_002 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Polemarchus.jpg')
@@ -215,64 +750,251 @@ story_003 = Story.create(
   lead_in: 'Glaucon, the persistent',
   category: 'Philosophy',
   body: "<p>
-  With these words I was thinking that I had made an end of the discussion;
-  but the end, in truth, proved to be only a beginning. For Glaucon, who is
-  always the most pugnacious of men, was dissatisfied at Thrasymachus’
-  retirement; he wanted to have the battle out. So he said to me: Socrates,
-  do you wish really to persuade us, or only to seem to have persuaded us,
-  that to be just is always better than to be unjust?
-</p>
-<p>
-  I should wish really to persuade you, I replied, if I could.
-</p>
-<p>
-  Then you certainly have not succeeded. Let me ask you now:—How would
-  you arrange goods—are there not some which we welcome for their own
-  sakes, and independently of their consequences, as, for example, harmless
-  pleasures and enjoyments, which delight us at the time, although nothing
-  follows from them?
-</p>
-<p>
-  I agree in thinking that there is such a class, I replied.
-</p>
-<p>
-  Is there not also a second class of goods, such as knowledge, sight,
-  health, which are desirable not only in themselves, but also for their
-  results?
-</p>
-<p>
-  Certainly, I said.
-</p>
-<p>
-  And would you not recognize a third class, such as gymnastic, and the care
-  of the sick, and the physician’s art; also the various ways of
-  money-making—these do us good but we regard them as disagreeable;
-  and no one would choose them for their own sakes, but only for the sake of
-  some reward or result which flows from them?
-</p>
-<p>
-  There is, I said, this third class also. But why do you ask?
-</p>
-<p>
-  Because I want to know in which of the three classes you would place
-  justice?
-</p>
-<p>
-  In the highest class, I replied,—among those goods which he who
-  would be happy desires both for their own sake and for the sake of their
-  results.
-</p>
-<p>
-  Then the many are of another mind; they think that justice is to be
-  reckoned in the troublesome class, among goods which are to be pursued for
-  the sake of rewards and of reputation, but in themselves are disagreeable
-  and rather to be avoided.
-</p>
-<p>
-  I know, I said, that this is their manner of thinking, and that this was
-  the thesis which Thrasymachus was maintaining just now, when he censured
-  justice and praised injustice. But I am too stupid to be convinced by him.
-</p>",
+    With these words I was thinking that I had made an end of the discussion;
+    but the end, in truth, proved to be only a beginning. For Glaucon, who is
+    always the most pugnacious of men, was dissatisfied at Thrasymachus’
+    retirement; he wanted to have the battle out. So he said to me: Socrates,
+    do you wish really to persuade us, or only to seem to have persuaded us,
+    that to be just is always better than to be unjust?
+  </p>
+  <p>
+    I should wish really to persuade you, I replied, if I could.
+  </p>
+  <p>
+    Then you certainly have not succeeded. Let me ask you now:—How would
+    you arrange goods—are there not some which we welcome for their own
+    sakes, and independently of their consequences, as, for example, harmless
+    pleasures and enjoyments, which delight us at the time, although nothing
+    follows from them?
+  </p>
+  <p>
+    I agree in thinking that there is such a class, I replied.
+  </p>
+  <p>
+    Is there not also a second class of goods, such as knowledge, sight,
+    health, which are desirable not only in themselves, but also for their
+    results?
+  </p>
+  <p>
+    Certainly, I said.
+  </p>
+  <p>
+    And would you not recognize a third class, such as gymnastic, and the care
+    of the sick, and the physician’s art; also the various ways of
+    money-making—these do us good but we regard them as disagreeable;
+    and no one would choose them for their own sakes, but only for the sake of
+    some reward or result which flows from them?
+  </p>
+  <p>
+    There is, I said, this third class also. But why do you ask?
+  </p>
+  <p>
+    Because I want to know in which of the three classes you would place
+    justice?
+  </p>
+  <p>
+    In the highest class, I replied,—among those goods which he who
+    would be happy desires both for their own sake and for the sake of their
+    results.
+  </p>
+  <p>
+    Then the many are of another mind; they think that justice is to be
+    reckoned in the troublesome class, among goods which are to be pursued for
+    the sake of rewards and of reputation, but in themselves are disagreeable
+    and rather to be avoided.
+  </p>
+  <p>
+    I know, I said, that this is their manner of thinking, and that this was
+    the thesis which Thrasymachus was maintaining just now, when he censured
+    justice and praised injustice. But I am too stupid to be convinced by him.
+  </p>
+      <p>
+    I wish, he said, that you would hear me as well as him, and then I shall
+    see whether you and I agree. For Thrasymachus seems to me, like a snake,
+    to have been charmed by your voice sooner than he ought to have been; but
+    to my mind the nature of justice and injustice have not yet been made
+    clear. Setting aside their rewards and results, I want to know what they
+    are in themselves, and how they inwardly work in the soul. If you, please,
+    then, I will revive the argument of Thrasymachus. And first I will speak
+    of the nature and origin of justice according to the common view of them.
+    Secondly, I will show that all men who practise justice do so against
+    their will, of necessity, but not as a good. And thirdly, I will argue
+    that there is reason in this view, for the life of the unjust is after all
+    better far than the life of the just—if what they say is true,
+    Socrates, since I myself am not of their opinion. But still I acknowledge
+    that I am perplexed when I hear the voices of Thrasymachus and myriads of
+    others dinning in my ears; and, on the other hand, I have never yet heard
+    the superiority of justice to injustice maintained by any one in a
+    satisfactory way. I want to hear justice praised in respect of itself;
+    then I shall be satisfied, and you are the person from whom I think that I
+    am most likely to hear this; and therefore I will praise the unjust life
+    to the utmost of my power, and my manner of speaking will indicate the
+    manner in which I desire to hear you too praising justice and censuring
+    injustice. Will you say whether you approve of my proposal?
+  </p>
+  <p>
+    Indeed I do; nor can I imagine any theme about which a man of sense would
+    oftener wish to converse.
+  </p>
+  <p>
+    I am delighted, he replied, to hear you say so, and shall begin by
+    speaking, as I proposed, of the nature and origin of justice.
+  </p>
+  <p>
+    They say that to do injustice is, by nature, good; to suffer injustice,
+    evil; but that the evil is greater than the good. And so when men have
+    both done and suffered injustice and have had experience of both, not
+    being able to avoid the one and obtain the other, they think that they had
+    better agree among themselves to have neither; hence there arise laws and
+    mutual covenants; and that which is ordained by law is termed by them
+    lawful and just. This they affirm to be the origin and nature of justice;—it
+    is a mean or compromise, between the best of all, which is to do injustice
+    and not be punished, and the worst of all, which is to suffer injustice
+    without the power of retaliation; and justice, being at a middle point
+    between the two, is tolerated not as a good, but as the lesser evil, and
+    honoured by reason of the inability of men to do injustice. For no man who
+    is worthy to be called a man would ever submit to such an agreement if he
+    were able to resist; he would be mad if he did. Such is the received
+    account, Socrates, of the nature and origin of justice.
+  </p>
+  <p>
+    Now that those who practise justice do so involuntarily and because they
+    have not the power to be unjust will best appear if we imagine something
+    of this kind: having given both to the just and the unjust power to do
+    what they will, let us watch and see whither desire will lead them; then
+    we shall discover in the very act the just and unjust man to be proceeding
+    along the same road, following their interest, which all natures deem to
+    be their good, and are only diverted into the path of justice by the force
+    of law. The liberty which we are supposing may be most completely given to
+    them in the form of such a power as is said to have been possessed by
+    Gyges, the ancestor of Croesus the Lydian. According to the tradition,
+    Gyges was a shepherd in the service of the king of Lydia; there was a
+    great storm, and an earthquake made an opening in the earth at the place
+    where he was feeding his flock. Amazed at the sight, he descended into the
+    opening, where, among other marvels, he beheld a hollow brazen horse,
+    having doors, at which he stooping and looking in saw a dead body of
+    stature, as appeared to him, more than human, and having nothing on but a
+    gold ring; this he took from the finger of the dead and reascended. Now
+    the shepherds met together, according to custom, that they might send
+    their monthly report about the flocks to the king; into their assembly he
+    came having the ring on his finger, and as he was sitting among them he
+    chanced to turn the collet of the ring inside his hand, when instantly he
+    became invisible to the rest of the company and they began to speak of him
+    as if he were no longer present. He was astonished at this, and again
+    touching the ring he turned the collet outwards and reappeared; he made
+    several trials of the ring, and always with the same result—when he
+    turned the collet inwards he became invisible, when outwards he
+    reappeared. Whereupon he contrived to be chosen one of the messengers who
+    were sent to the court; whereas soon as he arrived he seduced the queen,
+    and with her help conspired against the king and slew him, and took the
+    kingdom. Suppose now that there were two such magic rings, and the just
+    put on one of them and the unjust the other; no man can be imagined to be
+    of such an iron nature that he would stand fast in justice. No man would
+    keep his hands off what was not his own when he could safely take what he
+    liked out of the market, or go into houses and lie with any one at his
+    pleasure, or kill or release from prison whom he would, and in all
+    respects be like a God among men. Then the actions of the just would be as
+    the actions of the unjust; they would both come at last to the same point.
+    And this we may truly affirm to be a great proof that a man is just, not
+    willingly or because he thinks that justice is any good to him
+    individually, but of necessity, for wherever any one thinks that he can
+    safely be unjust, there he is unjust. For all men believe in their hearts
+    that injustice is far more profitable to the individual than justice, and
+    he who argues as I have been supposing, will say that they are right. If
+    you could imagine any one obtaining this power of becoming invisible, and
+    never doing any wrong or touching what was another’s, he would be thought
+    by the lookers-on to be a most wretched idiot, although they would praise
+    him to one another’s faces, and keep up appearances with one another from
+    a fear that they too might suffer injustice. Enough of this.
+  </p>
+  <p>
+    Now, if we are to form a real judgment of the life of the just and unjust,
+    we must isolate them; there is no other way; and how is the isolation to
+    be effected? I answer: Let the unjust man be entirely unjust, and the just
+    man entirely just; nothing is to be taken away from either of them, and
+    both are to be perfectly furnished for the work of their respective lives.
+    First, let the unjust be like other distinguished masters of craft; like
+    the skilful pilot or physician, who knows intuitively his own powers and
+    keeps within their limits, and who, if he fails at any point, is able to
+    recover himself. So let the unjust make his unjust attempts in the right
+    way, and lie hidden if he means to be great in his injustice: (he who is
+    found out is nobody:) for the highest reach of injustice is, to be deemed
+    just when you are not. Therefore I say that in the perfectly unjust man we
+    must assume the most perfect injustice; there is to be no deduction, but
+    we must allow him, while doing the most unjust acts, to have acquired the
+    greatest reputation for justice. If he have taken a false step he must be
+    able to recover himself; he must be one who can speak with effect, if any
+    of his deeds come to light, and who can force his way where force is
+    required by his courage and strength, and command of money and friends.
+    And at his side let us place the just man in his nobleness and simplicity,
+    wishing, as Aeschylus says, to be and not to seem good. There must be no
+    seeming, for if he seem to be just he will be honoured and rewarded, and
+    then we shall not know whether he is just for the sake of justice or for
+    the sake of honours and rewards; therefore, let him be clothed in justice
+    only, and have no other covering; and he must be imagined in a state of
+    life the opposite of the former. Let him be the best of men, and let him
+    be thought the worst; then he will have been put to the proof; and we
+    shall see whether he will be affected by the fear of infamy and its
+    consequences. And let him continue thus to the hour of death; being just
+    and seeming to be unjust. When both have reached the uttermost extreme,
+    the one of justice and the other of injustice, let judgment be given which
+    of them is the happier of the two.
+  </p>
+  <p>
+    Heavens! my dear Glaucon, I said, how energetically you polish them up for
+    the decision, first one and then the other, as if they were two statues.
+  </p>
+  <p>
+    I do my best, he said. And now that we know what they are like there is no
+    difficulty in tracing out the sort of life which awaits either of them.
+    This I will proceed to describe; but as you may think the description a
+    little too coarse, I ask you to suppose, Socrates, that the words which
+    follow are not mine.—Let me put them into the mouths of the
+    eulogists of injustice: They will tell you that the just man who is
+    thought unjust will be scourged, racked, bound—will have his eyes
+    burnt out; and, at last, after suffering every kind of evil, he will be
+    impaled: Then he will understand that he ought to seem only, and not to
+    be, just; the words of Aeschylus may be more truly spoken of the unjust
+    than of the just. For the unjust is pursuing a reality; he does not live
+    with a view to appearances—he wants to be really unjust and not to
+    seem only:—
+  </p>
+  <p>
+    ’His mind has a soil deep and fertile, Out of which spring his prudent
+    counsels.’
+  </p>
+  <p>
+    In the first place, he is thought just, and therefore bears rule in the
+    city; he can marry whom he will, and give in marriage to whom he will;
+    also he can trade and deal where he likes, and always to his own
+    advantage, because he has no misgivings about injustice; and at every
+    contest, whether in public or private, he gets the better of his
+    antagonists, and gains at their expense, and is rich, and out of his gains
+    he can benefit his friends, and harm his enemies; moreover, he can offer
+    sacrifices, and dedicate gifts to the gods abundantly and magnificently,
+    and can honour the gods or any man whom he wants to honour in a far better
+    style than the just, and therefore he is likely to be dearer than they are
+    to the gods. And thus, Socrates, gods and men are said to unite in making
+    the life of the unjust better than the life of the just.
+  </p>
+  <p>
+    I was going to say something in answer to Glaucon, when Adeimantus, his
+    brother, interposed: Socrates, he said, you do not suppose that there is
+    nothing more to be urged?
+  </p>
+  <p>
+    Why, what else is there? I answered.
+  </p>
+  <p>
+    The strongest point of all has not been even mentioned, he replied.
+  </p>
+  <p>
+    Well, then, according to the proverb, ’Let brother help brother’—if
+    he fails in any part do you assist him; although I must confess that
+    Glaucon has already said quite enough to lay me in the dust, and take from
+    me the power of helping justice.
+  </p>
+  ",
   author_id: User.find_by(username: 'Plato').id
 )
 file_003 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Glaucon.jpg')
@@ -285,99 +1007,377 @@ story_004 = Story.create(
   lead_in: 'Socrates, the unpersuaded',
   category: 'Philosophy',
   body: "<p>
-  Such then, I said, are our principles of theology—some tales are to
-  be told, and others are not to be told to our disciples from their youth
-  upwards, if we mean them to honour the gods and their parents, and to
-  value friendship with one another.
-</p>
-<p>
-  Yes; and I think that our principles are right, he said.
-</p>
-<p>
-  But if they are to be courageous, must they not learn other lessons
-  besides these, and lessons of such a kind as will take away the fear of
-  death? Can any man be courageous who has the fear of death in him?
-</p>
-<p>
-  Certainly not, he said.
-</p>
-<p>
-  And can he be fearless of death, or will he choose death in battle rather
-  than defeat and slavery, who believes the world below to be real and
-  terrible?
-</p>
-<p>
-  Impossible.
-</p>
-<p>
-  Then we must assume a control over the narrators of this class of tales as
-  well as over the others, and beg them not simply to revile but rather to
-  commend the world below, intimating to them that their descriptions are
-  untrue, and will do harm to our future warriors.
-</p>
-<p>
-  That will be our duty, he said.
-</p>
-<p>
-  Then, I said, we shall have to obliterate many obnoxious passages,
-  beginning with the verses,
-</p>
-<p>
-  ’I would rather be a serf on the land of a poor and portionless man than
-  rule over all the dead who have come to nought.’
-</p>
-<p>
-  We must also expunge the verse, which tells us how Pluto feared,
-</p>
-<p>
-  ’Lest the mansions grim and squalid which the gods abhor should be seen
-  both of mortals and immortals.’
-</p>
-<p>
-  And again:—
-</p>
-<p>
-  ’O heavens! verily in the house of Hades there is soul and ghostly form
-  but no mind at all!’
-</p>
-<p>
-  Again of Tiresias:—
-</p>
-<p>
-  ’(To him even after death did Persephone grant mind,) that he alone should
-  be wise; but the other souls are flitting shades.’
-</p>
-<p>
-  Again:—
-</p>
-<p>
-  ’The soul flying from the limbs had gone to Hades, lamenting her fate,
-  leaving manhood and youth.’
-</p>
-<p>
-  Again:—
-</p>
-<p>
-  ’And the soul, with shrilling cry, passed like smoke beneath the earth.’
-</p>
-<p>
-  And,—
-</p>
-<p>
-  ’As bats in hollow of mystic cavern, whenever any of them has dropped out
-  of the string and falls from the rock, fly shrilling and cling to one
-  another, so did they with shrilling cry hold together as they moved.’
-</p>
-<p>
-  And we must beg Homer and the other poets not to be angry if we strike out
-  these and similar passages, not because they are unpoetical, or
-  unattractive to the popular ear, but because the greater the poetical
-  charm of them, the less are they meet for the ears of boys and men who are
-  meant to be free, and who should fear slavery more than death.
-</p>
-<p>
-  Undoubtedly.
-</p>",
+    Such then, I said, are our principles of theology—some tales are to
+    be told, and others are not to be told to our disciples from their youth
+    upwards, if we mean them to honour the gods and their parents, and to
+    value friendship with one another.
+  </p>
+  <p>
+    Yes; and I think that our principles are right, he said.
+  </p>
+  <p>
+    But if they are to be courageous, must they not learn other lessons
+    besides these, and lessons of such a kind as will take away the fear of
+    death? Can any man be courageous who has the fear of death in him?
+  </p>
+  <p>
+    Certainly not, he said.
+  </p>
+  <p>
+    And can he be fearless of death, or will he choose death in battle rather
+    than defeat and slavery, who believes the world below to be real and
+    terrible?
+  </p>
+  <p>
+    Impossible.
+  </p>
+  <p>
+    Then we must assume a control over the narrators of this class of tales as
+    well as over the others, and beg them not simply to revile but rather to
+    commend the world below, intimating to them that their descriptions are
+    untrue, and will do harm to our future warriors.
+  </p>
+  <p>
+    That will be our duty, he said.
+  </p>
+  <p>
+    Then, I said, we shall have to obliterate many obnoxious passages,
+    beginning with the verses,
+  </p>
+  <p>
+    ’I would rather be a serf on the land of a poor and portionless man than
+    rule over all the dead who have come to nought.’
+  </p>
+  <p>
+    We must also expunge the verse, which tells us how Pluto feared,
+  </p>
+  <p>
+    ’Lest the mansions grim and squalid which the gods abhor should be seen
+    both of mortals and immortals.’
+  </p>
+  <p>
+    And again:—
+  </p>
+  <p>
+    ’O heavens! verily in the house of Hades there is soul and ghostly form
+    but no mind at all!’
+  </p>
+  <p>
+    Again of Tiresias:—
+  </p>
+  <p>
+    ’(To him even after death did Persephone grant mind,) that he alone should
+    be wise; but the other souls are flitting shades.’
+  </p>
+  <p>
+    Again:—
+  </p>
+  <p>
+    ’The soul flying from the limbs had gone to Hades, lamenting her fate,
+    leaving manhood and youth.’
+  </p>
+  <p>
+    Again:—
+  </p>
+  <p>
+    ’And the soul, with shrilling cry, passed like smoke beneath the earth.’
+  </p>
+  <p>
+    And,—
+  </p>
+  <p>
+    ’As bats in hollow of mystic cavern, whenever any of them has dropped out
+    of the string and falls from the rock, fly shrilling and cling to one
+    another, so did they with shrilling cry hold together as they moved.’
+  </p>
+  <p>
+    And we must beg Homer and the other poets not to be angry if we strike out
+    these and similar passages, not because they are unpoetical, or
+    unattractive to the popular ear, but because the greater the poetical
+    charm of them, the less are they meet for the ears of boys and men who are
+    meant to be free, and who should fear slavery more than death.
+  </p>
+  <p>
+    Undoubtedly.
+  </p>
+  <p>
+    Also we shall have to reject all the terrible and appalling names which
+    describe the world below—Cocytus and Styx, ghosts under the earth,
+    and sapless shades, and any similar words of which the very mention causes
+    a shudder to pass through the inmost soul of him who hears them. I do not
+    say that these horrible stories may not have a use of some kind; but there
+    is a danger that the nerves of our guardians may be rendered too excitable
+    and effeminate by them.
+  </p>
+  <p>
+    There is a real danger, he said.
+  </p>
+  <p>
+    Then we must have no more of them.
+  </p>
+  <p>
+    True.
+  </p>
+  <p>
+    Another and a nobler strain must be composed and sung by us.
+  </p>
+  <p>
+    Clearly.
+  </p>
+  <p>
+    And shall we proceed to get rid of the weepings and wailings of famous
+    men?
+  </p>
+  <p>
+    They will go with the rest.
+  </p>
+  <p>
+    But shall we be right in getting rid of them? Reflect: our principle is
+    that the good man will not consider death terrible to any other good man
+    who is his comrade.
+  </p>
+  <p>
+    Yes; that is our principle.
+  </p>
+  <p>
+    And therefore he will not sorrow for his departed friend as though he had
+    suffered anything terrible?
+  </p>
+  <p>
+    He will not.
+  </p>
+  <p>
+    Such an one, as we further maintain, is sufficient for himself and his own
+    happiness, and therefore is least in need of other men.
+  </p>
+  <p>
+    True, he said.
+  </p>
+  <p>
+    And for this reason the loss of a son or brother, or the deprivation of
+    fortune, is to him of all men least terrible.
+  </p>
+  <p>
+    Assuredly.
+  </p>
+  <p>
+    And therefore he will be least likely to lament, and will bear with the
+    greatest equanimity any misfortune of this sort which may befall him.
+  </p>
+  <p>
+    Yes, he will feel such a misfortune far less than another.
+  </p>
+  <p>
+    Then we shall be right in getting rid of the lamentations of famous men,
+    and making them over to women (and not even to women who are good for
+    anything), or to men of a baser sort, that those who are being educated by
+    us to be the defenders of their country may scorn to do the like.
+  </p>
+  <p>
+    That will be very right.
+  </p>
+  <p>
+    Then we will once more entreat Homer and the other poets not to depict
+    Achilles, who is the son of a goddess, first lying on his side, then on
+    his back, and then on his face; then starting up and sailing in a frenzy
+    along the shores of the barren sea; now taking the sooty ashes in both his
+    hands and pouring them over his head, or weeping and wailing in the
+    various modes which Homer has delineated. Nor should he describe Priam the
+    kinsman of the gods as praying and beseeching,
+  </p>
+  <p>
+    ’Rolling in the dirt, calling each man loudly by his name.’
+  </p>
+  <p>
+    Still more earnestly will we beg of him at all events not to introduce the
+    gods lamenting and saying,
+  </p>
+  <p>
+    ’Alas! my misery! Alas! that I bore the bravest to my sorrow.’
+  </p>
+  <p>
+    But if he must introduce the gods, at any rate let him not dare so
+    completely to misrepresent the greatest of the gods, as to make him say—
+  </p>
+  <p>
+    ’O heavens! with my eyes verily I behold a dear friend of mine chased
+    round and round the city, and my heart is sorrowful.’
+  </p>
+  <p>
+    Or again:—
+  </p>
+  <p>
+    Woe is me that I am fated to have Sarpedon, dearest of men to me, subdued
+    at the hands of Patroclus the son of Menoetius.’
+  </p>
+  <p>
+    For if, my sweet Adeimantus, our youth seriously listen to such unworthy
+    representations of the gods, instead of laughing at them as they ought,
+    hardly will any of them deem that he himself, being but a man, can be
+    dishonoured by similar actions; neither will he rebuke any inclination
+    which may arise in his mind to say and do the like. And instead of having
+    any shame or self-control, he will be always whining and lamenting on
+    slight occasions.
+  </p>
+  <p>
+    Yes, he said, that is most true.
+  </p>
+  <p>
+    Yes, I replied; but that surely is what ought not to be, as the argument
+    has just proved to us; and by that proof we must abide until it is
+    disproved by a better.
+  </p>
+  <p>
+    It ought not to be.
+  </p>
+  <p>
+    Neither ought our guardians to be given to laughter. For a fit of laughter
+    which has been indulged to excess almost always produces a violent
+    reaction.
+  </p>
+  <p>
+    So I believe.
+  </p>
+  <p>
+    Then persons of worth, even if only mortal men, must not be represented as
+    overcome by laughter, and still less must such a representation of the
+    gods be allowed.
+  </p>
+  <p>
+    Still less of the gods, as you say, he replied.
+  </p>
+  <p>
+    Then we shall not suffer such an expression to be used about the gods as
+    that of Homer when he describes how
+  </p>
+  <p>
+    ’Inextinguishable laughter arose among the blessed gods, when they saw
+    Hephaestus bustling about the mansion.’
+  </p>
+  <p>
+    On your views, we must not admit them.
+  </p>
+  <p>
+    On my views, if you like to father them on me; that we must not admit them
+    is certain.
+  </p>
+  <p>
+    Again, truth should be highly valued; if, as we were saying, a lie is
+    useless to the gods, and useful only as a medicine to men, then the use of
+    such medicines should be restricted to physicians; private individuals
+    have no business with them.
+  </p>
+  <p>
+    Clearly not, he said.
+  </p>
+  <p>
+    Then if any one at all is to have the privilege of lying, the rulers of
+    the State should be the persons; and they, in their dealings either with
+    enemies or with their own citizens, may be allowed to lie for the public
+    good. But nobody else should meddle with anything of the kind; and
+    although the rulers have this privilege, for a private man to lie to them
+    in return is to be deemed a more heinous fault than for the patient or the
+    pupil of a gymnasium not to speak the truth about his own bodily illnesses
+    to the physician or to the trainer, or for a sailor not to tell the
+    captain what is happening about the ship and the rest of the crew, and how
+    things are going with himself or his fellow sailors.
+  </p>
+  <p>
+    Most true, he said.
+  </p>
+  <p>
+    If, then, the ruler catches anybody beside himself lying in the State,
+  </p>
+  <p>
+    ’Any of the craftsmen, whether he be priest or physician or carpenter,’
+  </p>
+  <p>
+    he will punish him for introducing a practice which is equally subversive
+    and destructive of ship or State.
+  </p>
+  <p>
+    Most certainly, he said, if our idea of the State is ever carried out.
+  </p>
+  <p>
+    In the next place our youth must be temperate?
+  </p>
+  <p>
+    Certainly.
+  </p>
+  <p>
+    Are not the chief elements of temperance, speaking generally, obedience to
+    commanders and self-control in sensual pleasures?
+  </p>
+  <p>
+    True.
+  </p>
+  <p>
+    Then we shall approve such language as that of Diomede in Homer,
+  </p>
+  <p>
+    ’Friend, sit still and obey my word,’
+  </p>
+  <p>
+    and the verses which follow,
+  </p>
+  <p>
+    ’The Greeks marched breathing prowess, ...in silent awe of their leaders,’
+  </p>
+  <p>
+    and other sentiments of the same kind.
+  </p>
+  <p>
+    We shall.
+  </p>
+  <p>
+    What of this line,
+  </p>
+  <p>
+    ’O heavy with wine, who hast the eyes of a dog and the heart of a stag,’
+  </p>
+  <p>
+    and of the words which follow? Would you say that these, or any similar
+    impertinences which private individuals are supposed to address to their
+    rulers, whether in verse or prose, are well or ill spoken?
+  </p>
+  <p>
+    They are ill spoken.
+  </p>
+  <p>
+    They may very possibly afford some amusement, but they do not conduce to
+    temperance. And therefore they are likely to do harm to our young men—you
+    would agree with me there?
+  </p>
+  <p>
+    Yes.
+  </p>
+  <p>
+    And then, again, to make the wisest of men say that nothing in his opinion
+    is more glorious than
+  </p>
+  <p>
+    ’When the tables are full of bread and meat, and the cup-bearer carries
+    round wine which he draws from the bowl and pours into the cups,’
+  </p>
+  <p>
+    is it fit or conducive to temperance for a young man to hear such words?
+    Or the verse
+  </p>
+  <p>
+    ’The saddest of fates is to die and meet destiny from hunger?’
+  </p>
+  <p>
+    What would you say again to the tale of Zeus, who, while other gods and
+    men were asleep and he the only person awake, lay devising plans, but
+    forgot them all in a moment through his lust, and was so completely
+    overcome at the sight of Here that he would not even go into the hut, but
+    wanted to lie with her on the ground, declaring that he had never been in
+    such a state of rapture before, even when they first met one another
+  </p>
+  <p>
+    ’Without the knowledge of their parents;’
+  </p>
+  ",
   author_id: User.find_by(username: 'Plato').id
 )
 file_004 = open('https://s3-us-west-1.amazonaws.com/ethertechna-seeds/Socrates.jpg')
@@ -2556,5 +3556,146 @@ story_015 = Story.create(
 file_015 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/nicolas-hoizey-455603-unsplash.jpg')
 story_015.image.attach(io: file_015, filename: 'nicolas-hoizey-455603-unsplash.jpg')
 story_015.update(created_at: Time.parse("April 14, 1913, 12:00am UTC +0"))
+
+
+story_016 = Story.create(
+  title: 'Varnishes for Ironwork',
+  lead_in: 'A fine black varnish suitable for the covering of broken places in sewing machines and similar articles',
+  category: 'Crafts',
+  body: "<p>A reliable authority gives the following as a very good recipe for
+  ironwork varnish. Take 2 lb. of tar oil, <sup>1</sup>/<sub>2</sub>&nbsp;lb. of pounded resin, and
+  <sup>1</sup>/<sub>2</sub>&nbsp;lb. of asphaltum, and dissolve together, and then mix while hot in
+  an iron kettle, taking all care to prevent the flames getting into
+  contact with the mixture. When cold the varnish is ready for
+  application to outdoor ironwork. Another recipe is to take 3 lb. of
+  powdered resin, place it in a tin or iron vessel, and add thereto
+  2<sup>1</sup>/<sub>2</sub>&nbsp;pints of spirits of turpentine, which well shake, and then let
+  it stand for a day or two, giving it an occasional shake. Then add to
+  it 5 quarts of boiled oil, shake it thoroughly well all together,
+  afterwards letting it stand in a warm room till it gets clear. The
+  clear portion can then be drawn off and used, or reduced with spirits
+  of turpentine till of the requisite consistency. For making a varnish
+  suitable for iron patterns, take sufficient oil of turpentine for the
+  purpose of the job in hand, and drop into it, drop by drop, some
+  strong commercial oil of vitriol, when the acid will cause a dark
+  syrupy precipitate in the oil of turpentine, and continue to add the
+  drops of vitriol till the precipitate ceases to act, after which pour
+  off the liquid and wash the syrupy mass with water, when it will be
+  ready for use. When the iron pattern is to be varnished, it must be
+  heated to a gentle degree, the syrupy product applied, and then the
+  article allowed to dry.</p>
+  
+  <p>A fine black varnish suitable for the covering of broken places in
+  sewing machines and similar articles, where the japanned surface has
+  become injured or scratched, can be made by taking some fine
+  lamp-black or ivory-black, and thoroughly mixing it with copal
+  varnish. The black must be in a very fine powder, and to mix the more
+  readily it should be made into a pasty mass with turpentine. For the
+  ordinary repairing shop this will be found very handy.</p>
+  
+  <p>The following is a simple way for tarring sheet-iron pipes to prevent
+  rusting. The sections as made should be coated with coal tar, and then
+  filled with light wood shavings, and the latter set alight. The effect
+  of this treatment will be to render the iron practically proof against
+  rust for an indefinite period, rendering future painting unnecessary.
+  It is important, of course, that the iron should not be made too hot,
+  or kept hot for too long a time, lest the tar should be burnt off.</p>
+  
+  <p>The following is a varnish for iron and steel given by a recognized
+  authority: 5 parts of camphor and elemi, 15 parts of sandarach, and
+  10 parts of clear grains of mastic, are dissolved in the requisite
+  quantity of alcohol, and applied cold.</p>
+  
+  <p>Another good black enamel for small articles can be made by mixing 1
+  lb. of asphaltum with 1 lb. of resin in 4 lb. of tar oil, well heating
+  the whole in an iron vessel before applying.</p>
+  
+  <p>A good brown japan can be prepared by separately heating equal
+  quantities of amber and asphaltum, and adding to each one-half the
+  quantity by weight of boiled linseed oil. Both compounds are then
+  mixed together. Copal resin may be substituted for the amber, but it
+  is not so durable. Oil varnish made from amber is highly elastic. If
+  it is used to protect tin-plate printing, when the plates after
+  stoving have been subsequently rolled so as to distort the letters,
+  the varnish has in no way suffered, and its surface remains unbroken.</p>
+  
+  <p>A bronzing composition for coating iron consists of 120 parts mercury,
+  10 parts tin, 20 parts green vitriol, 120 parts water, and 15 parts
+  hydrochloric acid of 1.2 specific gravity.</p>
+  ",
+  author_id: User.find_by(username: 'William N Brown').id
+)
+file_016 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/yann-le-comte-712005-unsplash.jpg')
+story_016.image.attach(io: file_016, filename: 'yann-le-comte-712005-unsplash.jpg')
+story_016.update(created_at: Time.parse("April 14, 1913, 10:30pm UTC +0"))
+
+
+story_017 = Story.create(
+  title: 'Black Paints.',
+  lead_in: 'Carbon, in one form or another, is the base of all black pigments.',
+  category: 'Crafts',
+  body: "<p>Carbon, in one form or another, is the base of all black pigments. By
+  far the most common of these, as used in structural plants, is
+  graphite. Other black pigments are lamp-black (including carbon black)
+  and bone-black, the former being produced in many grades, varying in
+  price from twopence to half a crown per pound. Bone-black, which is
+  refuse from the sugar-house black, varies in the percentage of carbon
+  contained, which is usually about 10 or 12 per cent, the remainder
+  being the mineral matter originally present in the bone, and
+  containing 3 or 4 per cent of carbonate, whilst most of the remainder
+  is phosphate of lime. Lamp-black is an absolutely impalpable powder,
+  which having a small amount of greasy matter in it, greatly retards
+  the drying of the oil with which it may be mixed. For this reason it
+  is not used by itself, but is added in small quantity to other paints,
+  which it affects by changing their colour, and probably their
+  durability. For example, it is a common practice to add it to red
+  lead, in order to tone down its brilliant colour, and also to correct
+  the tendency it has to turn white, due to the conversion of the red
+  oxide of lead into the carbonate.</p>
+  ",
+  author_id: User.find_by(username: 'William N Brown').id
+)
+file_017 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/wall-2635972_1920.jpg')
+story_017.image.attach(io: file_017, filename: 'wall-2635972_1920.jpg')
+story_017.update(created_at: Time.parse("April 14, 1913, 1:02pm UTC +0"))
+
+
+story_018 = Story.create(
+  title: 'How one piece of safety equipment has been saving lives for 100 years',
+  lead_in: 'Hard hats save lives, and what you may not know is that the hard hat turns 100 this year.',
+  category: 'Technology',
+  body: "<p>(BPT) - Gary Govanus didn’t put much thought into what he was wearing 45 years ago while working in-flight services at night at Chicago O’Hare, but by the end of that day his life would be forever changed because he reached for a hard hat at the start of his shift.</p><p>On the night of his accident, he and his team were cleaning out an Eastern 747 airplane that had electrical problems and flaps stuck in the extended position. This meant moving things in and out of the plane using an inconvenient, steep staircase.</p><p>”Because of the height of the door and the curvature of the air frame, the ramp that usually nestled up against the side of the plane at door level was now about two feet lower than the door and there was a three-foot gap between the plane and the truck,” said Govanus. ”It presented an obstacle that required thought and planning to get into and out of the plane.”</p><p>Freezing cold and past quitting time, Govanus was anxious to get home to see his fianc&eacute;e, who had recently arrived in town.</p><p>”I was thinking about going home and not getting into the airplane,” he said. ”As I took that final step to get into the aircraft, I missed. I may not remember everything from that night, but the sight of watching the open door go by as I started my plunge is forever ingrained. I knew that I was about to find out if it was my time to die.”</p><p>He fell about 30 feet to the cement tarmac. Thanks to the position he landed in, a heavy winter coat that provided cushion and his Bullard hard hat, he survived.</p><p>”I was wearing a hard hat and that heavy jacket. The hard hat kept me alive. The jacket prevented further injury to my shoulders and arms. I came away with two compressed vertebrae and two broken wrists. I was blessed,” Govanus said.</p><p><strong>Hard hat history</strong></p><p>Hard hats save lives, and what you may not know is that the hard hat turns 100 this year. The hard hat comes from Kentucky-based, family-owned Bullard, founded in 1898 in San Francisco to supply carbide lamps and mining equipment to gold and copper miners. The &ldquo;Hard Boiled&rdquo; hat, introduced in 1919, was the first of many innovative designs over the past century in head protection and safety equipment.</p><p>During the 1930s, while the Golden Gate Bridge was being constructed in San Francisco, bridge engineer Joseph B. Strauss asked the company to adapt its hats to protect bridge workers. This was the first-ever designated &ldquo;hard hat area.&rdquo; The company continued to innovate the hard hat. In 1938, they designed and manufactured the first aluminum hard hat, considered durable and reasonably lightweight for the time.</p><p>The company&rsquo;s distinctive three-rib, heat-resistant fiberglass hard hat was developed in the 1940s. In the 1950s and &rsquo;60s, thermoplastics replaced fiberglass. In 1982, the standard hard hat changed again with the incorporation of a non-slip ratchet suspension with a knob in the back for simple sizing.</p><p>The modern hard hat is produced from polyethylene plastic, making it lightweight, durable, easy to mold and non-conductive to electricity. Features such as easy-lock snaps, an upgraded suspension system and enhanced air flow, make it more comfortable and convenient than ever.</p><p>Bullard is also a supporter of the Turtle Club, a group that honors those whose life was saved as a result of wearing a hard hat. Survivors can share their story via the company website, www.bullard.com.</p>
+  ",
+  author_id: User.find_by(username: 'Brandpoint').id
+)
+file_018 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/1034464234.jpg')
+story_018.image.attach(io: file_018, filename: '1034464234.jpg')
+story_018.update(created_at: Time.parse("May 21, 2019, 12:00am UTC +0"))
+
+
+story_019 = Story.create(
+  title: 'The future of commercial trucking: Your favorite goods now delivered using alternative fuel',
+  lead_in: 'Thanks to the trucking industry, you are able to purchase and use the things you want and need.',
+  category: 'Technology',
+  body: "<p>(BPT) - Think about it: The food you purchased at the grocery store and cook for dinner tonight might have come from other locations around the world. Your clothes bought online might come from a manufacturing plant across the country. That package sitting outside in your entryway when you get home from work could have traveled coast-to-coast before arriving at your door.</p><p>Thanks to the trucking industry, you are able to purchase and use the things you want and need. In fact, the trucking industry is the lifeblood of the U.S. economy, with about 71 percent of all the freight tonnage moved in the U.S. being done so on trucks, according to the American Trucking Associations. As the industry saying goes: If you bought it &mdash; a truck probably brought it.</p><p>To move 10.5 billion tons of freight annually requires over 3.6 million heavy-duty Class 8 trucks and over 3.5 million truck drivers. It also takes almost 39 billion gallons of diesel fuel to move all of that freight, according to the association.</p><p>However, the trucking industry is changing with the times. With a forward-thinking mindset, transportation leaders and proactive companies are embracing the trend of using alternative-fuel vehicles such as<s></s> electric vehicles in commercial transportation.</p><p>You probably have heard of electric cars for personal use, and maybe you even own one yourself. These types of vehicles are designed to use a battery instead of traditional fuels, which helps eliminate tailpipe emissions.</p><p>Larger commercial vehicles like trucks and buses may also benefit from this electric technology. The switch to electricity is slowly changing commercial transportation. In the future, you might receive your food, goods and packages &mdash; either directly or indirectly &mdash; by a commercial electric truck or van rather than <s></s>diesel-powered or gasoline-fueled vehicles. While currently in limited availability, electric trucks are starting to take root in some of the larger trucking fleets.</p><p>Consider Penske Truck Leasing for example, which operates and maintains a truck fleet of more than 311,000 vehicles in North America. The company recently announced it was adding small, medium and large electric trucks to its overall fleet mix. And, it is also building out commercial electric vehicle charging stations at select California locations as a start.</p><p>Penske is an industry leader in transportation and in the areas of operating and maintaining fleets of traditionally fueled vehicles as well as alternative-fueled vehicles, which includes natural gas, propane, electric and diesel-electric hybrids.</p><p>Early introductions from truck manufacturers and large fleets like Penske are helping to re-shape the future of mobility in commercial transportation. The goods you use today that are shipped via traditional diesel trucks may one day be shipped using alternative fuels such as electricity.</p>
+  ",
+  author_id: User.find_by(username: 'Brandpoint').id
+)
+file_019 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/1034074520.jpg')
+story_019.image.attach(io: file_019, filename: '1034074520.jpg')
+story_019.update(created_at: Time.parse("May 2, 2019, 12:00am UTC +0"))
+
+
+story_020 = Story.create(
+  title: 'Getting kids thinking about life after graduation',
+  lead_in: 'While it seems like kids need no help understanding technology in their day-to-day-lives, many might not necessarily think about technology in a career capacity.',
+  category: 'Technology',
+  body: "<p>(BPT) - Experiences and learning outside of the classroom can really shape a child&rsquo;s perspective, particularly when it comes to making decisions about what sort of work they might want to pursue. As important as formal education is, kids also learn from the school of life.</p><p>While it seems like kids need no help understanding technology in their day-to-day-lives, many might not necessarily think about technology in a career capacity. Particularly for young girls, there is an opportunity to encourage them to explore this sector. Research by the Computing Technology Industry Association found that 69 percent of women who have not pursued careers in information technology attribute their choice to not knowing what opportunities are available to them.</p><p>Programs like &ldquo;Take Our Daughters and Sons to Work Day&rdquo; are great tools for broadening kids’ perspectives of different jobs that are available &mdash; roles they might not have even thought existed.</p><p>For Jo Amato-Tuck, global partner development manager, Microsoft, the opportunity to inspire kids is deeply personal. She is a member of the Parent Employee Resource Group, which sponsors Bring your Kids to Work Day for the more than 40,000 employees in Redmond, Washington, and thousands more in remote offices at Microsoft. What&rsquo;s more, Jo is a mother of three children, all of whom are at an age where they are asking more questions not only about their mom&rsquo;s work, but about what sorts of jobs might interest them (besides being Adele someday).</p><p>She touts that sparking imagination and inspiration in kids is particularly important for young girls, who might feel like a career in technology isn&rsquo;t for them. &ldquo;Young women visiting our office see diverse women working in myriad areas. It gives them real, tangible proof that there are many successful women in technology, so they can pursue a career in technology one day.&rdquo;</p><p>Amato-Tuck has the following advice for parents hoping to spark discussions about career ambitions with kids:</p><p>* Find out what your kids are genuinely curious about, setting aside your own hopes or aspirations of what sort of work they&rsquo;ll pursue. Foster that interest through books, videos or other research in fun, relatable ways.</p><p>* Take advantage of programs like Take Our Daughters and Sons to Work Day. If your profession doesn’t line up with their interests, don’t take it personally: Perhaps see if you can arrange a visit with a family member or friend whose career piques their curiosity.</p><p>* Bring your child to work, even for short visits. It helps them understand your life outside of being a parent and gives them context on what you do while they are at school.</p><p>* It is never too early to build mentorships. Take them to places where they might meet a professional that they can look up to and encourage them to ask meaningful questions. It is also a great opportunity to build social skills like sending a follow-up note to thank that person for their time.</p>
+  ",
+  author_id: User.find_by(username: 'Brandpoint').id
+)
+file_020 = open('https://ethertechna-seeds.s3-us-west-1.amazonaws.com/1034673826.jpg')
+story_020.image.attach(io: file_020, filename: '1034673826.jpg')
+story_020.update(created_at: Time.parse("April 3, 2019, 12:00am UTC +0"))
 
 

@@ -23,7 +23,7 @@ class StoriesPopIndex extends React.Component {
         category,
         read_time,
       } = story
-      // debugger
+
       return <li key={ id } >
         <div className="story-pop-item-container">
           <div className="story-pop-item-number">

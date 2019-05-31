@@ -21,12 +21,11 @@
 }
 
 .main-featured {
-  // display: none;
   width: 1208px;
-  height: 350px;
+  height: 100%;
+  max-height: 350px;
   margin: 0 auto;
-  // background: rgba(0,0,0,0.25);
-  border: 1px solid darkgray;
+  // border: 1px solid darkgray; //temp
 }
 
 .main-featured-break-link {
