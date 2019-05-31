@@ -27,6 +27,18 @@ class StoryIndexer extends React.Component {
         read_time,
       } = story
 
+      const storyImg = image_url
+      ? <img
+          src={ image_url }
+          alt={ title }
+          className="story-image"
+        />
+      : <img
+          src={ window.logo }
+          alt="EtherTechna"
+          className="story-item-image"
+        />
+
       return <li key={ id } className="story-indexer-container" >
         <div className="story-links-container">
           <Link
@@ -58,7 +70,7 @@ class StoryIndexer extends React.Component {
         </div>
         <div className="image-container">
           <Link to={ `/stories/${ id }` } replace >
-            <img src={ image_url } alt={ title } className="story-image"/>    
+            { storyImg }
           </Link>
         </div>
       </li>

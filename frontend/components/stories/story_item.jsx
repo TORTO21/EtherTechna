@@ -41,6 +41,18 @@ class StoryItem extends React.Component {
         </Link>
       : null
 
+    const storyImg = image_url
+      ? <img
+          src={ image_url }
+          alt={ title }
+          className="story-item-image"
+        />
+      : <img
+          src={ window.logo }
+          alt="EtherTechna"
+          className="story-item-image"
+        />
+
     return (
       <div className="story-item-container">
 
@@ -49,7 +61,7 @@ class StoryItem extends React.Component {
         </div>
 
         <div className="story-item-image">
-          <img src={ image_url } alt={ title } className="story-item-image"/>  
+          { storyImg }
         </div>
         
         <div className="story-item-header">

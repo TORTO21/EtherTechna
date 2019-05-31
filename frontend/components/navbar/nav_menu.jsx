@@ -46,9 +46,9 @@ class NavMenu extends React.Component {
                   New Story
               </Link>
             </li>
-            <li><a href="#">Stories</a></li>
+            {/* <li><a href="#">Stories</a></li>
             <li><a href="#">Series</a></li>
-            <li><a href="#">Stats</a></li>
+            <li><a href="#">Stats</a></li> */}
           </ul>
         </li>
         <li>
@@ -61,8 +61,8 @@ class NavMenu extends React.Component {
                   Profile
               </Link>
             </li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Help</a></li>
+            {/* <li><a href="#">Settings</a></li>
+            <li><a href="#">Help</a></li> */}
             <li>
               <a
               href="#"

@@ -4,7 +4,7 @@ import { fetchStories } from '../../actions/story_actions'
 
 const msp = (state) => {
   return {
-    stories: Object.values(state.entities.stories).slice(0, 10),
+    stories: Object.values(state.entities.stories).slice(10),
   }
 }
 
