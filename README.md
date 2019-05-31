@@ -20,4 +20,9 @@ Live Site: [EtherTechna](https://ethertechna.herokuapp.com/)
 <img src="./src/common/images/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575c096e1.8015139215266584217889.png" width="50" height="50"/>
 <img src="./src/common/images/kisspng-redux-react-javascript-vue-js-single-page-applicat-5af5cde424ee15.8061979615260584681513.png" width="50" height="50"/>
 
-Crated with Ruby on Rails, React, and Redux, this single page app strives to create a seemless, user-centric experience where content is easy to produce, update, and beautify.  
+Crated with Ruby on Rails, React, and Redux, this single page app strives to create a seemless, user-centric experience where content is easy to produce, update, and beautify.
+
+#### The Main Page splashes guests with works from the various would-be and well-read authors:
+
+
+<img src="./src/common/images/ethertechna_prod_screenshot.png" width="700" height="400"/>
