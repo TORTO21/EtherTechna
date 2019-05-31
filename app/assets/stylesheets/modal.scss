@@ -4,7 +4,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.90);
   z-index: 10;
   text-align: center;
 }
@@ -17,7 +17,7 @@
 
   top: 48.5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50.55%, -50%);
   box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.09);
   width: 800px;
   height: 450px;
@@ -38,9 +38,10 @@
 }
 
 .modal-form-error-container {
+  background: white;
   display: inline-block;
+  position: fixed;
   color: rgba(0, 0, 0, 0.84);
-  text-align: center;
   line-height: 1.2rem;
   font-size: 13px;
   font-family:
@@ -51,10 +52,13 @@
     Geneva,
     Arial,
     sans-serif;
-  margin-top: 200px;
+  margin-top: 170px;
+  vertical-align: text-top;
+  transform: translate(-50%, -50%);
   padding: 10px;
   box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  z-index: 11;
 
   &:empty {
     display: none;

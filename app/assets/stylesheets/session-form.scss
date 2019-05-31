@@ -16,6 +16,7 @@
       Geneva,
       Arial,
       sans-serif;
+    // font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -88,6 +89,8 @@
 }
 
 .form-switch {
+  display: flex;
+  justify-content: center;
   margin: 14px;
 }
 

@@ -1,0 +1,50 @@
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+  white-space: nowrap;
+  cursor: pointer;
+  
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+.link-gray {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+}
+
+.link-author {
+  color: rgba(0, 0, 0, 0.84);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link-green {
+  font-size: 13px;
+  color: #03a87c;
+  cursor: pointer;
+ 
+  &:hover {
+    color: #018f69;
+  }
+}
+
+.btn-green {
+  border: 1px solid #03a87c;
+  border-radius: 4px;
+  padding: 5px 16px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #018f69;
+  }
+}
+

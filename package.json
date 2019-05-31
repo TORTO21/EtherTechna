@@ -34,6 +34,15 @@
     "start": "webpack -w --mode=development",
     "postinstall": "webpack"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TORTO21/EtherTechna.git"
@@ -44,5 +53,8 @@
   "bugs": {
     "url": "https://github.com/TORTO21/EtherTechna/issues"
   },
-  "homepage": "https://github.com/TORTO21/EtherTechna#readme"
+  "homepage": "https://github.com/TORTO21/EtherTechna#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4"
+  }
 }

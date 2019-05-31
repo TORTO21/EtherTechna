@@ -5,25 +5,24 @@ import NavMenu from './nav_menu_container'
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
-    
   }
 
   // when signed out:
-  //   1) Link to Home (EtherTechna)
+  //   DONE) Link to Home (EtherTechna)
   //   2) Search
   //   3) Link to signup splash
-  //   4) link to sign in
-  //   5) link to signup
+  //   DONE) link to sign in
+  //   DONE) link to signup
   // when signed in:
-  //   1) Link to Home (EtherTechna)
+  //   DONE) Link to Home (EtherTechna)
   //   2) Search 
   //   3) Reading List 
   //   4) Notifications 
-  //   5) Profile page / Profile Menu
+  //   DONE) Profile page / Profile Menu
   // when on membership page:
-  //   1) Link to Home (EtherTechna)
-  //   2) NavLink to About (Our story)
-  //   3) NavLink to About membership (default)
+  //   DONE) Link to Home (EtherTechna)
+  //   2) NavLink to About ("Our story")
+  //   3) NavLink to About "Membership" (default)
   //   4) Button Upgrade (Signin Modal)
 
   render () {
@@ -45,25 +44,23 @@ class NavBar extends React.Component {
             className="link" >
               Become a member
           </Link> */}        {/* Bonus feature */}
-          <a
-            href="#"
+          <div
             onClick={ e => loginGuest() }
             className="link" >
               Demo site features!
-          </a>
+          </div>
           
-          <a
-            href="#"
+          <div
             onClick={ () => openModal('login') }
-            className="login link-green" >
+            className="login link-green link" >
               Sign in
-          </a>
-          <a
-            href="#"
+          </div>
+
+          <div
             onClick={ () => openModal('signup') }
-            className="signup link-green">
+            className="signup link-green link">
               Get Started
-          </a>
+          </div>
         </div>
 
     return (

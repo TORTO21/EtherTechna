@@ -17,7 +17,6 @@ const mdp = (dispatch) => {
     openModal: (modal) => dispatch(openModal(modal)),
     loginGuest: () => dispatch(login({
       username: "guest",
-      email: "guest@EtherTechna.com",
       password: "password"
     }))
   }

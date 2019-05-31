@@ -1,16 +1,13 @@
-// .navbar-container {
-//   display: flex;
-//   justify-content: center;
-// }
+
 
 .navbar {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1032px;
+  max-width: 1032px;
   height: 65;
   padding: 0 20px;
+  margin: 0 auto;
 
   a {
     margin: 15px;
@@ -36,10 +33,18 @@
   display: flex;
   align-items: center;
   
+  div {
+    font-size: 13px;
+    height: 22px;
+    margin-right: 16px;
+    padding: 0;
+  }
+
   .signup {
+    height: 35px;
     border: 1px solid #03a87c;
     border-radius: 4px;
-    padding: 10px 15px;
+    padding: 0px 16px;
 
     &:hover {
       border: 1px solid #039770;

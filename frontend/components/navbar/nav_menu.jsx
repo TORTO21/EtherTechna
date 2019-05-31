@@ -12,16 +12,15 @@ class NavMenu extends React.Component {
     this.closeMenu = this.closeMenu.bind(this)
   }
 
-  openMenu(e) {
-    e.preventDefault()
+  openMenu() {
     this.setState(
       { navMenuOpen: true },
       () => { document.addEventListener('click', this.closeMenu) }
     )
   }
 
-  closeMenu() {
-    if (!this.dropdownMenu.contains(event.target)) {
+  closeMenu(e) {
+    if (this.dropdownMenu && !this.dropdownMenu.contains(e.target)) {
       this.setState(
         { navMenuOpen: false },
         () => { document.removeEventListener('click', this.closeMenu) }
@@ -31,19 +30,25 @@ class NavMenu extends React.Component {
 
   render () {
     const { logout, currentUser } = this.props
-    
     const nav_menu = this.state.navMenuOpen 
     ? <ul
         id="nav-menu-dropdown"
-        className="nav-menu-dropdown hidden" 
+        className="nav-menu-dropdown" 
         ref={ (el) => { this.dropdownMenu = el } }
       >
         <li>
           <ul className="nav-menu-stories">
-            <li><a href="#">New story</a></li>
-            <li><a href="#">Stories</a></li>
+            <li>
+              <Link
+                to="/stories/new"
+                replace
+                className="link" >
+                  New Story
+              </Link>
+            </li>
+            {/* <li><a href="#">Stories</a></li>
             <li><a href="#">Series</a></li>
-            <li><a href="#">Stats</a></li>
+            <li><a href="#">Stats</a></li> */}
           </ul>
         </li>
         <li>
@@ -56,8 +61,8 @@ class NavMenu extends React.Component {
                   Profile
               </Link>
             </li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Help</a></li>
+            {/* <li><a href="#">Settings</a></li>
+            <li><a href="#">Help</a></li> */}
             <li>
               <a
               href="#"
@@ -72,14 +77,15 @@ class NavMenu extends React.Component {
     : null
 
     return (
-      <div>
-        <UserAvatar />
-        <a
-          href="#"
+      <div className="nav-menu-container">
+        <div>
+          <UserAvatar />
+        </div>
+        <div
           className="nav-user"
           onClick={ this.openMenu } >
           Logged in as: { currentUser.username }
-        </a>
+        </div>
         { nav_menu }
       </div>
     )

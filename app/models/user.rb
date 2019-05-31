@@ -10,8 +10,18 @@ class User < ApplicationRecord
   
   attr_reader :password
   
+  has_many :stories,
+    foreign_key: :author_id,
+    class_name: :Story
+
+  has_one_attached :image
+
   # FGRIPE
   
+  def self.to_date(user)
+    user.created_at.strftime("%b %Y")
+  end
+
   def self.find_by_credentials(username, password)
     @user = User.find_by(username: username)
     return nil unless @user

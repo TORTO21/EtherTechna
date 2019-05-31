@@ -4,7 +4,10 @@ import Modal from './modal/modal_container'
 import NavBar from './navbar/nav_bar_container'
 import MainPage from './main/main_page'
 import MembershipPage from './signup/membership_page'
-import ProfilePage from './profile/profile_page'
+import StoryItem from '../components/stories/story_item_container'
+import NewStoryForm from '../components/stories/new_story_form_container'
+import EditStoryForm from '../components/stories/edit_story_form_container'
+import UserPage from '../components/user/user_page_container'
 import { AuthRoute, ProtectedRoute } from '../util/route_util'
 
 
@@ -12,12 +15,20 @@ const App = () => {
   return (
     <div className='root-container'>
       <Modal />
-      <NavBar className='navbar-container' />
+      <div className='navbar-container'>
+        <NavBar />
+        
+      </div>
+      <div className="main-container">
       <Switch>
-        <ProtectedRoute path="/users/:userId" component={ ProfilePage } />
+        <Route path="/users/:userId" component={ UserPage } />
         <AuthRoute path="/membership" component={ MembershipPage } />
+        <ProtectedRoute path="/stories/new" component={ NewStoryForm } />
+        <ProtectedRoute path="/stories/:storyId/edit" component={ EditStoryForm }/>
+        <Route path="/stories/:storyId" component={ StoryItem } />
         <Route path="/" component={ MainPage } />
       </Switch>
+      </div>
     </div>
   )
 }
