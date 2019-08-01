@@ -19,7 +19,6 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  url: <%= ENV['DATABASE_URL'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
@@ -79,15 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-# production:
-#   <<: *default
-#   database: EtherTechna_production
-#   username: EtherTechna
-#   password: <%= ENV['ETHERTECHNA_DATABASE_PASSWORD'] %>
 production:
   <<: *default
-  adapter: postgresql
-  host: db
-  username: postgres
-  # we don't need to specify a password
-  password:
+  database: EtherTechna_production
+  username: EtherTechna
+  password: <%= ENV['ETHERTECHNA_DATABASE_PASSWORD'] %>
