@@ -14,9 +14,15 @@ Live Site: [EtherTechna](https://ethertechna.herokuapp.com/)
 
 
 # **Tech Basis**
-<a href="https://www.ruby-lang.org/en/"><img src="./src/common/images/5a358a828a88b4.8411539615134583065674.png" width="50" height="50"/></a><a href="https://rubyonrails.org/"><img src="./src/common/images/kissclipart-ruby-on-rails-logo-transparent-clipart-ruby-on-rai-f272d849509c5dbb.png" width="50" height="50"/></a><a href="https://reactjs.org/"><img src="./src/common/images/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575c096e1.8015139215266584217889.png" width="50" height="50"/></a><a href="https://redux.js.org/"><img src="./src/common/images/kisspng-redux-react-javascript-vue-js-single-page-applicat-5af5cde424ee15.8061979615260584681513.png" width="50" height="50"/></a>
+<a href="https://www.ruby-lang.org/en/"><img src="./src/common/images/ruby-plain.svg" width="50" height="50"/></a>
+<a href="https://rubyonrails.org/"><img src="./src/common/images/rails-plain.svg" width="50" height="50"/></a>
+<a href="https://www.postgresql.org/"><img src="./src/common/images/postgresql-plain.svg" width="50" height="50"/></a>
+<a href="https://reactjs.org/"><img src="./src/common/images/react-original.svg" width="50" height="50"/></a>
+<a href="https://redux.js.org/"><img src="./src/common/images/redux-plain.svg" width="auto" height="55"/></a>
+<a href="https://nodejs.org/en/"><img src="./src/common/images/nodejs-original.svg" width="50" height="50"/></a>
+<a href="https://sass-lang.com/"><img src="./src/common/images/sass-original.svg" width="50" height="50"/></a>
 
-Created with Ruby on Rails, React, and Redux, this single page app strives to create a seemless, user-centric experience where content is easy to produce, update, and beautify.
+Created with Ruby on Rails and PostgreSQL on the back-end, and presented with React + Redux, Node.js, and SASS on the front, this single page app aims to create a seemless, user-centric experience where content is easy to produce, update, and beautify.
 
 #### The Main Page splashes guests with works from the various would-be and well-read authors:
 
@@ -29,7 +35,7 @@ Created with Ruby on Rails, React, and Redux, this single page app strives to cr
 
 <img src="./src/common/images/ethertechna_story_demo.gif" width="700" height="400"/>
 
-#### The User Authorization modal is created via a React Presentational component
+#### The User Auth Modal is implemented with React
 
 ```
 class Modal extends React.Component {
@@ -81,7 +87,7 @@ class Modal extends React.Component {
 export default Modal
 ```
 
-Verifying global state via reducer:
+#### And is kept in Global State via Redux:
 ```
 import { OPEN_MODAL, CLOSE_MODAL } from '../actions/modal_actions'
 
