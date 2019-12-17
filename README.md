@@ -13,7 +13,7 @@ Live Site: [EtherTechna](https://ethertechna.herokuapp.com/)
 
 
 
-# **Tech Basis**
+# **Tech Stack**
 <a href="https://www.ruby-lang.org/en/"><img src="./src/common/images/ruby-plain.svg" width="50" height="50"/></a>
 <a href="https://rubyonrails.org/"><img src="./src/common/images/rails-plain.svg" width="50" height="50"/></a>
 <a href="https://www.postgresql.org/"><img src="./src/common/images/postgresql-plain.svg" width="50" height="50"/></a>

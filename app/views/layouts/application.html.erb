@@ -8,9 +8,8 @@
     <%= stylesheet_link_tag    'application', media: 'all'%>
     <%= javascript_include_tag 'application'%>
 
-    <script>
-      window.logo = "<%= image_url('ethertechna_logo.png') %>"
-    </script>
+    <script>window.logo = "<%= image_url('ethertechna_logo.png') %>"</script>
+    <%= favicon_link_tag asset_path('favicon.ico') %>
   </head>
 
   <body>
